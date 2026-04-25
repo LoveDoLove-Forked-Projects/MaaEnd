@@ -191,12 +191,13 @@ Pipeline 的核心逻辑是类似**有限状态机（FSM）/决策树（Decision
 上述 `all_of` 中调用的 `InRegionalDevelopment` 是项目中已经定义好的识别节点，用于确认当前处于地区建设主界面。**你可以直接通过填写节点名称来复用已有的识别逻辑**，从而避免重复编写相同的代码。
 
 > **💡 进阶提示：组合识别 (And / Or)**
-> 
+>
 > 除了传统的 `TemplateMatch` (模板匹配)、`Color` (颜色匹配) 等基础方法外，Pipeline 还支持使用逻辑条件 **`And` (与)** 和 **`Or` (或)** 来组合多个识别节点。这在处理复杂或多变的 UI 状态时非常有用。
-> 
+>
 > 关于组合识别的具体语法和高级用法，请参阅 [MaaFramework 官方文档 - Pipeline 协议](https://maafw.com/docs/3.1-PipelineProtocol#and)。
 
 下方示例展示了另一个用于识别地区建设二级界面的节点 `InRegionalDevelopmentView2`，它通过 OCR 识别顶部功能名称，来精准确认当前的界面状态：
+
 ```json
 {
     "InRegionalDevelopmentView2": {

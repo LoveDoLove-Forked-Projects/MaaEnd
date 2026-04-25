@@ -12,7 +12,7 @@
 | `state.go`         | 单次运行状态 `RunState`、`getRunState` / `setRunState`、`Reset()`；持有 `matchapi.Engine` 与统计结果                               |
 | `filter.go`        | 小工具：`skillCombinationKey`（用于 UI 统计聚合）                                                                                  |
 | `ui.go`            | 所有展示：MXU 日志、战利品摘要、技能池/统计日志、预刻写方案推荐（结果来自 `matchapi`）                                             |
-| `plan_export.go`   | 预刻写推荐与日志同时写入 `./EssencePlan.html`（`export_calculator_script` 时）；页眉/焦点提示见 `essencefilter.focus.plan.html_*` |
+| `plan_export.go`   | 预刻写推荐与日志同时写入 `./EssencePlan.html`（`export_calculator_script` 时）；页眉/焦点提示见 `essencefilter.focus.plan.html_*`  |
 | `actions.go`       | 所有 CustomAction：Init / OCR 库存与 Trace / CheckItem·CheckItemLevel·SkillDecision / RowCollect·RowNextItem·Finish·SwipeCalibrate |
 | `options.go`       | 从节点 attach 读取 `EssenceFilterOptions`、 rarity/essence 列表格式化                                                              |
 | `resource_path.go` | 监听资源加载路径，供 Init 解析数据目录                                                                                             |
