@@ -143,18 +143,18 @@ When a new Station appears, **the generator side (`routes.mjs` + `data.mjs`) req
 
 `data.mjs`'s default export is an array; each element is the render context for one observation point (field names map to `${Xxx}` placeholders in `template.jsonc`). It reads the manually maintained `ROUTE_CONFIG` / `ROUTE_DEFAULTS` from `routes.mjs` and assembles each row together with `kite_station.json`:
 
-| Field                               | Source                                                                                                                                          |
-| ----------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------- |
-| `Station`                           | English terminal name from `kite_station.json` (PascalCase)                                                                                     |
-| `Id`                                | Generated from the official English name by default; overridden only when `ROUTE_CONFIG[*].Id` is explicitly provided                           |
-| `Name`                              | `name["zh-CN"]` from `kite_station.json`, special characters stripped; `ROUTE_CONFIG` is also matched by this Chinese name                      |
-| `GoToMonitoringTerminal`            | Determined by `Station`                                                                                                                         |
-| `EnterMap`                          | `ROUTE_CONFIG[*].EnterMap`; **must be an existing SceneManager node name**                                                                      |
-| `MapName` / `MapTarget` / `MapPath` | `ROUTE_CONFIG[*]`; maps to `MapTrackerMove` / `MapTrackerAssertLocation` parameters                                                             |
-| `CameraSwipeDirection`              | `ROUTE_CONFIG[*]`; must be one of `EnvironmentMonitoringSwipeScreen{Up/Down/Left/Right}`                                                        |
-| `CameraMaxHit`                      | `ROUTE_CONFIG[*].CameraMaxHit`; defaults to `ROUTE_DEFAULTS.CameraMaxHit` (`2`); corresponds to the max-hit count for `${Id}AdjustCamera` swipe |
-| `ExpectedText`                      | Expanded automatically from `mission.name` multi-language map in `kite_station.json` (5 languages, English converted to a flexible regex)       |
-| `InExpectedText`                    | Expanded from `mission.shotTargetName` in `kite_station.json`                                                                                   |
+| Field                                                  | Source                                                                                                                                                    |
+| ------------------------------------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `Station`                                              | English terminal name from `kite_station.json` (PascalCase)                                                                                               |
+| `Id`                                                   | Generated from the official English name by default; overridden only when `ROUTE_CONFIG[*].Id` is explicitly provided                                     |
+| `Name`                                                 | `name["zh-CN"]` from `kite_station.json`, special characters stripped; `ROUTE_CONFIG` is also matched by this Chinese name                                |
+| `GoToMonitoringTerminal`                               | Determined by `Station`                                                                                                                                   |
+| `EnterMap`                                             | `ROUTE_CONFIG[*].EnterMap`; **must be an existing SceneManager node name**                                                                                |
+| `MapName` / `MapTarget` / `MapPath`                    | `ROUTE_CONFIG[*]`; maps to `MapTrackerMove` / `MapTrackerAssertLocation` parameters                                                                       |
+| `CameraSwipeDirection`                                 | `ROUTE_CONFIG[*]`; must be one of `EnvironmentMonitoringSwipeScreen{Up/Down/Left/Right}`                                                                  |
+| `CameraMaxHit`                                         | `ROUTE_CONFIG[*].CameraMaxHit`; defaults to `ROUTE_DEFAULTS.CameraMaxHit` (`2`); corresponds to the max-hit count for `${Id}AdjustCamera` swipe           |
+| `ExpectedText`                                         | Expanded automatically from `mission.name` multi-language map in `kite_station.json` (5 languages, English converted to a flexible regex)                 |
+| `InExpectedText`                                       | Expanded from `mission.shotTargetName` in `kite_station.json`                                                                                             |
 | `TrackOrGoToNext` / `TrackNext` / `AlreadyTrackedNext` | Decided automatically by `data.mjs`: it first confirms the mission is tracked, then either continues to photo-taking or degrades to accept-and-track-only |
 
 ### Terminal groups: `terminals-config.json`

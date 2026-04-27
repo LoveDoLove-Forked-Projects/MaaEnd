@@ -143,19 +143,19 @@ MysteriousCryptidGraffiti         → 谜之生物的涂鸦
 
 `data.mjs` 的默认导出是数组，每个元素 = 一个观察点的渲染上下文（字段名与 `template.jsonc` 中 `${Xxx}` 占位符对应）。它从 `routes.mjs` 读取维护者手动维护的 `ROUTE_CONFIG` / `ROUTE_DEFAULTS`，再结合 `kite_station.json` 装配出最终行：
 
-| 字段                                | 来源                                                                                                                         |
-| ----------------------------------- | ---------------------------------------------------------------------------------------------------------------------------- |
-| `Station`                           | `kite_station.json` 的英文站名（PascalCase）                                                                                 |
-| `Id`                                | 默认由官方英文名 PascalCase 自动生成；仅当 `ROUTE_CONFIG[*].Id` 显式提供时覆盖                                               |
-| `Name`                              | `kite_station.json` 的 `name["zh-CN"]`，去掉特殊符号；`ROUTE_CONFIG` 也按这个中文名归并匹配                                  |
-| `GoToMonitoringTerminal`            | 由 `Station` 决定                                                                                                            |
-| `EnterMap`                          | `ROUTE_CONFIG[*].EnterMap`，**必须是 SceneManager 中存在的节点名**                                                           |
-| `MapName` / `MapTarget` / `MapPath` | `ROUTE_CONFIG[*]`，对应 `MapTrackerMove` / `MapTrackerAssertLocation` 参数                                                   |
-| `CameraSwipeDirection`              | `ROUTE_CONFIG[*]`，必须是 `EnvironmentMonitoringSwipeScreen{Up/Down/Left/Right}` 之一                                        |
-| `CameraMaxHit`                      | `ROUTE_CONFIG[*].CameraMaxHit`，缺省用 `ROUTE_DEFAULTS.CameraMaxHit`（`2`）；对应 `${Id}AdjustCamera` 滑屏动作的最大命中次数 |
-| `ExpectedText`                      | 由 `kite_station.json` 的 `mission.name` 多语言 map 自动展开（5 语言，英文转柔性正则）                                       |
-| `InExpectedText`                    | 由 `kite_station.json` 的 `mission.shotTargetName` 自动展开                                                                  |
-| `TrackOrGoToNext` / `TrackNext` / `AlreadyTrackedNext` | 由 `data.mjs` 根据路线是否完整自动决定：先确认任务已追踪，再决定是继续前往拍照还是仅接取并追踪 |
+| 字段                                                   | 来源                                                                                                                         |
+| ------------------------------------------------------ | ---------------------------------------------------------------------------------------------------------------------------- |
+| `Station`                                              | `kite_station.json` 的英文站名（PascalCase）                                                                                 |
+| `Id`                                                   | 默认由官方英文名 PascalCase 自动生成；仅当 `ROUTE_CONFIG[*].Id` 显式提供时覆盖                                               |
+| `Name`                                                 | `kite_station.json` 的 `name["zh-CN"]`，去掉特殊符号；`ROUTE_CONFIG` 也按这个中文名归并匹配                                  |
+| `GoToMonitoringTerminal`                               | 由 `Station` 决定                                                                                                            |
+| `EnterMap`                                             | `ROUTE_CONFIG[*].EnterMap`，**必须是 SceneManager 中存在的节点名**                                                           |
+| `MapName` / `MapTarget` / `MapPath`                    | `ROUTE_CONFIG[*]`，对应 `MapTrackerMove` / `MapTrackerAssertLocation` 参数                                                   |
+| `CameraSwipeDirection`                                 | `ROUTE_CONFIG[*]`，必须是 `EnvironmentMonitoringSwipeScreen{Up/Down/Left/Right}` 之一                                        |
+| `CameraMaxHit`                                         | `ROUTE_CONFIG[*].CameraMaxHit`，缺省用 `ROUTE_DEFAULTS.CameraMaxHit`（`2`）；对应 `${Id}AdjustCamera` 滑屏动作的最大命中次数 |
+| `ExpectedText`                                         | 由 `kite_station.json` 的 `mission.name` 多语言 map 自动展开（5 语言，英文转柔性正则）                                       |
+| `InExpectedText`                                       | 由 `kite_station.json` 的 `mission.shotTargetName` 自动展开                                                                  |
+| `TrackOrGoToNext` / `TrackNext` / `AlreadyTrackedNext` | 由 `data.mjs` 根据路线是否完整自动决定：先确认任务已追踪，再决定是继续前往拍照还是仅接取并追踪                               |
 
 ### 终端分组：`terminals-config.json`
 

@@ -206,7 +206,7 @@ clickY = startY + (endY - startY) * numerator / denominator
 | `CenterPointOffset`       | `int[2]`                | 否   | 相对滑块识别框中心点的点击偏移，默认 `[-10, 0]`。                                                                                                                                                                                                              |
 | `ClampTargetToMax`        | `bool`                  | 否   | 为 `true` 时，若目标超过识别到的 `maxQuantity`，自动将目标值钳制为 `maxQuantity` 并继续，而非直接失败。默认 `false`（超过上限时直接失败）。                                                                                                                    |
 | `SwipeButton`             | `string`                | 否   | 自定义滑块模板路径。提供时覆盖 `BetterSlidingSwipeButton` 节点的默认模板。路径相对于 `resource/image/` 目录。默认 `""`（使用共享默认模板）。                                                                                                                   |
-| `ExceedingOverrideEnable` | `string`                | 否   | 当解析后的目标超出可滑动范围时，将指定 Pipeline 节点的 `enabled` 设为 `true`，然后返回成功。上限溢出时现在会先由 `ClampTargetToMax` 钳制；下限反向溢出仍会走这里。默认 `""`（禁用，动作直接失败）。                                                                 |
+| `ExceedingOverrideEnable` | `string`                | 否   | 当解析后的目标超出可滑动范围时，将指定 Pipeline 节点的 `enabled` 设为 `true`，然后返回成功。上限溢出时现在会先由 `ClampTargetToMax` 钳制；下限反向溢出仍会走这里。默认 `""`（禁用，动作直接失败）。                                                            |
 
 \* 正常模式下必填；仅滑动模式下忽略。
 

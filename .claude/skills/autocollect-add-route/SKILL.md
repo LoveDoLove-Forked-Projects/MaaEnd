@@ -58,23 +58,23 @@ argument-hint: 推荐直接提供：任务名（如“路线6：四号谷地-轻
 默认流程下，以下 4 类参数视为必要参数：
 
 1. 任务名
-   - 例如：`路线6：四号谷地-轻红柱状菌`
-   - 必须从任务名里解析出路线编号
-   - `路线6` 决定：
-     - 文件名：`AutoCollectRoute6.json`
-     - 节点前缀：`AutoCollectRoute6...`
-     - 子入口：`AutoCollectRoute6Sub`
-     - 任务 case：`Route6`
-     - locale 键：`option.AutoCollectRoute6.label`
+    - 例如：`路线6：四号谷地-轻红柱状菌`
+    - 必须从任务名里解析出路线编号
+    - `路线6` 决定：
+        - 文件名：`AutoCollectRoute6.json`
+        - 节点前缀：`AutoCollectRoute6...`
+        - 子入口：`AutoCollectRoute6Sub`
+        - 任务 case：`Route6`
+        - locale 键：`option.AutoCollectRoute6.label`
 2. 第一传送点
-   - 例如：`SceneEnterWorldValleyIVTheHub2`
-   - 它决定 `Start.next` 中的 `[JumpBack]SceneEnterWorldXxx`
+    - 例如：`SceneEnterWorldValleyIVTheHub2`
+    - 它决定 `Start.next` 中的 `[JumpBack]SceneEnterWorldXxx`
 3. 后续路径
-   - 至少要能提供断言点和后续导航点
-   - 如果用户给的是完整路径点列，要进一步判断第一个点是否只用于定位，以及 `true` 断点如何切段
+    - 至少要能提供断言点和后续导航点
+    - 如果用户给的是完整路径点列，要进一步判断第一个点是否只用于定位，以及 `true` 断点如何切段
 4. 采集类型
-   - 点击采集路线：`AutoCollectClickStart` + `AutoCollectClickAfter`
-   - 挖掘类路线：`AutoCollectDigStart` + `AutoCollectDigAfter`
+    - 点击采集路线：`AutoCollectClickStart` + `AutoCollectClickAfter`
+    - 挖掘类路线：`AutoCollectDigStart` + `AutoCollectDigAfter`
 
 如果这些参数中任一缺失，不要自行拍脑袋补全，必须及时提醒并向用户询问。
 
@@ -159,20 +159,20 @@ argument-hint: 推荐直接提供：任务名（如“路线6：四号谷地-轻
 
 在动手前，尽量把以下信息整理齐：
 
-| 字段 | 说明 |
-| --- | --- |
-| `TaskLabel` | 任务名，例如 `路线6：四号谷地-轻红柱状菌` |
-| `RouteId` | 从 `TaskLabel` 解析出的编号，例如 `6` |
-| `RouteFile` | 目标文件名，例如 `AutoCollectRoute6.json` |
-| `TemplateRoute` | 参考路线，例如 `Route3` |
-| `EnterWorldNode` | 第一传送点，例如 `SceneEnterWorldValleyIVTheHub2` |
-| `MapName` | 导航使用的地图名，例如 `map01_lv001` |
-| `AssertTarget` | 断言框坐标；如果断言点为 `[x, y]`，则换算为 `[x-10, y-10, 20, 20]`，例如点 `[530, 697]` 对应 `[520, 687, 20, 20]` |
-| `ZoneId` | 不单独向用户索取；默认从 `path` 第一项 `{"action":"ZONE","zone_id":"..."}` 推导，例如 `ValleyIV_Base` |
-| `ActionType` | 固定为 `MapNavigateAction` |
-| `CollectNext` | `AutoCollectClickStart` 或 `AutoCollectDigStart` |
-| `CollectAnchor` | `AutoCollectClickAfter` 或 `AutoCollectDigAfter` |
-| `PathSegments` | 拆分后的多段路径 |
+| 字段             | 说明                                                                                                              |
+| ---------------- | ----------------------------------------------------------------------------------------------------------------- |
+| `TaskLabel`      | 任务名，例如 `路线6：四号谷地-轻红柱状菌`                                                                         |
+| `RouteId`        | 从 `TaskLabel` 解析出的编号，例如 `6`                                                                             |
+| `RouteFile`      | 目标文件名，例如 `AutoCollectRoute6.json`                                                                         |
+| `TemplateRoute`  | 参考路线，例如 `Route3`                                                                                           |
+| `EnterWorldNode` | 第一传送点，例如 `SceneEnterWorldValleyIVTheHub2`                                                                 |
+| `MapName`        | 导航使用的地图名，例如 `map01_lv001`                                                                              |
+| `AssertTarget`   | 断言框坐标；如果断言点为 `[x, y]`，则换算为 `[x-10, y-10, 20, 20]`，例如点 `[530, 697]` 对应 `[520, 687, 20, 20]` |
+| `ZoneId`         | 不单独向用户索取；默认从 `path` 第一项 `{"action":"ZONE","zone_id":"..."}` 推导，例如 `ValleyIV_Base`             |
+| `ActionType`     | 固定为 `MapNavigateAction`                                                                                        |
+| `CollectNext`    | `AutoCollectClickStart` 或 `AutoCollectDigStart`                                                                  |
+| `CollectAnchor`  | `AutoCollectClickAfter` 或 `AutoCollectDigAfter`                                                                  |
+| `PathSegments`   | 拆分后的多段路径                                                                                                  |
 
 其中以下 4 项必须优先确认：
 
@@ -195,14 +195,14 @@ argument-hint: 推荐直接提供：任务名（如“路线6：四号谷地-轻
 1. 从任务名开头提取 `路线X`
 2. 得到 `RouteId = X`
 3. 用 `RouteId` 推导以下命名：
-   - `AutoCollectRouteX.json`
-   - `AutoCollectRouteXStart`
-   - `AutoCollectRouteXEnd`
-   - `AutoCollectRouteXAssertLocation`
-   - `AutoCollectRouteXGotoFind1`
-   - `AutoCollectRouteXSub`
-   - `RouteX`
-   - `option.AutoCollectRouteX.label`
+    - `AutoCollectRouteX.json`
+    - `AutoCollectRouteXStart`
+    - `AutoCollectRouteXEnd`
+    - `AutoCollectRouteXAssertLocation`
+    - `AutoCollectRouteXGotoFind1`
+    - `AutoCollectRouteXSub`
+    - `RouteX`
+    - `option.AutoCollectRouteX.label`
 
 如果任务名不满足上述格式，先让用户补一个合规任务名，再继续。
 
@@ -303,16 +303,16 @@ argument-hint: 推荐直接提供：任务名（如“路线6：四号谷地-轻
 每个 `GotoFindN` 还必须满足：
 
 - `desc` 用中文并按顺序编号：
-  - `前往采集点1`
-  - `前往采集点2`
-  - `前往采集点3`
-  - ...
+    - `前往采集点1`
+    - `前往采集点2`
+    - `前往采集点3`
+    - ...
 - `next` 统一指向采集开始节点：
-  - 点击采集：`AutoCollectClickStart`
-  - 挖掘类路线：`AutoCollectDigStart`
+    - 点击采集：`AutoCollectClickStart`
+    - 挖掘类路线：`AutoCollectDigStart`
 - `anchor` 对应串联到下一段：
-  - 点击采集：`AutoCollectClickAfter`
-  - 挖掘类路线：`AutoCollectDigAfter`
+    - 点击采集：`AutoCollectClickAfter`
+    - 挖掘类路线：`AutoCollectDigAfter`
 
 最后一段的 `anchor` 指向 `AutoCollectRouteXEnd`。
 
@@ -323,10 +323,24 @@ argument-hint: 推荐直接提供：任务名（如“路线6：四号谷地-轻
 ```json
 [
     {"action": "ZONE", "zone_id": "ValleyIV_Base"},
-    [532, 697],
-    [585, 723, true],
-    [586, 723],
-    [579, 734, true]
+    [
+        532,
+        697
+    ],
+    [
+        585,
+        723,
+        true
+    ],
+    [
+        586,
+        723
+    ],
+    [
+        579,
+        734,
+        true
+    ]
 ]
 ```
 
@@ -470,12 +484,12 @@ argument-hint: 推荐直接提供：任务名（如“路线6：四号谷地-轻
 至少做以下验证：
 
 1. 检查路线执行顺序是否为：
-   - 传送
-   - 位置断言
-   - 第 1 段导航并采集
-   - 第 2 段导航并采集
-   - ...
-   - 结束
+    - 传送
+    - 位置断言
+    - 第 1 段导航并采集
+    - 第 2 段导航并采集
+    - ...
+    - 结束
 2. 检查每个 `true` 点确实形成单独采集段
 3. 检查最后一段 `anchor` 是否能正常结束，而不是回环或断链
 4. 检查新增路线是否能在 `AutoCollectRoutes` 中显示
