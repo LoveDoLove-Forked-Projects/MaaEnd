@@ -1,5 +1,11 @@
 <!-- markdownlint-disable MD033 MD041 -->
 <p align="center">
+  <img alt="Do not discuss MAA on Skland" src="docs/img/NoSkland.png" width="280" />
+</p>
+
+<h1 align="center">Do not discuss MAA on Skland</h1>
+
+<p align="center">
   <img alt="LOGO" src="https://maaend.com/MaaEnd-Tiny-512.png" width="256" height="256" />
 </p>
 
