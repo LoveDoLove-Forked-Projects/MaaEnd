@@ -75,7 +75,11 @@ const ITEM_META = [...collectTradeItems().entries()]
     }, {});
 
 // ===== 从 settlement 数据提取全局物品字典 =====
-// expected 顺序: TC, CN, JP, EN
+// candidates 候选名称列表（CN/TC/JP/EN），供 Go 侧 SellProductNormalizedItemMatch
+// 自定义识别做抗噪声匹配。不再带 `^...$` 锚定符，噪声剥离和严格相等由
+// Go 侧 stripSeparators / stripASCIIAlnum 两层保证，既能消化 "I紫晶质瓶"
+// 这种 ASCII 前缀噪声，又不会把「柑实罐头」误匹配到「优质柑实罐头」
+// （见 MaaEnd issue #2344、PR #1790 / issue #1793）。
 const ITEMS = {};
 for (const settlement of Object.values(settlementData.settlements)) {
     for (const level of Object.values(settlement.byProsperityLevel)) {
@@ -83,16 +87,18 @@ for (const settlement of Object.values(settlementData.settlements)) {
             const meta = ITEM_META[item.itemId];
             if (!meta) continue;
             if (ITEMS[meta.key]) continue; // 已收集过
-            const enName = item.name.EN?.replace(/[\[\]|]+/g, "") || "";
+            const enName = item.name.EN?.replace(/[\[\]|]+/g, "").trim() || "";
             ITEMS[meta.key] = {
                 name: item.name.CN,
                 label: meta.label,
-                expected: [
-                    `^${escapeRegex(item.name.TC)}$`,
-                    `^${escapeRegex(item.name.CN)}$`,
-                    `^${escapeRegex(item.name.JP)}$`,
-                    enName ? `^${escapeRegex(enName)}$` : null,
-                ].filter(Boolean),
+                candidates: [
+                    item.name.CN,
+                    item.name.TC,
+                    item.name.JP,
+                    enName || null,
+                ]
+                    .map((s) => (typeof s === "string" ? s.trim() : s))
+                    .filter(Boolean),
             };
         }
     }
@@ -164,8 +170,16 @@ function buildSettlementTextExpected(settlementId, settlement) {
 }
 
 // ===== 从 settlement 数据生成 settlementId → 售卖点配置映射 =====
+// 排序策略：先按 domainId（domain_1=ValleyIV=四号谷地 在前，domain_2=Wuling=武陵 在后），
+// 同 domain 内再按 settlementId 字典序。直接按 settlementId 排序会让武陵（stm_hongs_*）
+// 排在四号谷地（stm_tundra_*）前面，与游戏内区域解锁顺序和 UI 习惯不符。
 const SETTLEMENT_MAP = Object.entries(settlementData.settlements)
-    .sort(([a], [b]) => a.localeCompare(b))
+    .sort(([aId, aData], [bId, bData]) => {
+        const aDomain = aData.domainId || "";
+        const bDomain = bData.domainId || "";
+        if (aDomain !== bDomain) return aDomain.localeCompare(bDomain);
+        return aId.localeCompare(bId);
+    })
     .reduce((acc, [settlementId, settlement]) => {
         const override = SETTLEMENT_OVERRIDE[settlementId] || {};
         const regionPrefix =
@@ -252,7 +266,9 @@ function buildItemCases(nodePrefix, itemNum, itemIds) {
             pipeline_override: {
                 [selectKey]: {
                     enabled: true,
-                    expected: item.expected,
+                    custom_recognition_param: {
+                        candidates: item.candidates,
+                    },
                 },
                 [missHandlerKey]: {
                     anchor: {

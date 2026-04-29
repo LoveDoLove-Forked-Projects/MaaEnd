@@ -205,12 +205,14 @@
                     "pipeline_override": {
                         "SellProductInfrastructureOutpostSelectItem1": {
                             "enabled": true,
-                            "expected": [
-                                "^精選蕎癒膠囊$",
-                                "^精选荞愈胶囊$",
-                                "^蕎花カプセルⅢ$",
-                                "^Buck Capsule A$"
-                            ]
+                            "custom_recognition_param": {
+                                "candidates": [
+                                    "精选荞愈胶囊",
+                                    "精選蕎癒膠囊",
+                                    "蕎花カプセルⅢ",
+                                    "Buck Capsule A"
+                                ]
+                            }
                         },
                         "SellProductInfrastructureOutpostSellAttempt1SetMissHandler": {
                             "anchor": {
@@ -225,12 +227,14 @@
                     "pipeline_override": {
                         "SellProductInfrastructureOutpostSelectItem1": {
                             "enabled": true,
-                            "expected": [
-                                "^高容量谷地電池$",
-                                "^高容谷地电池$",
-                                "^大容量谷地バッテリー$",
-                                "^HC Valley Battery$"
-                            ]
+                            "custom_recognition_param": {
+                                "candidates": [
+                                    "高容谷地电池",
+                                    "高容量谷地電池",
+                                    "大容量谷地バッテリー",
+                                    "HC Valley Battery"
+                                ]
+                            }
                         },
                         "SellProductInfrastructureOutpostSellAttempt1SetMissHandler": {
                             "anchor": {
@@ -245,12 +249,14 @@
                     "pipeline_override": {
                         "SellProductInfrastructureOutpostSelectItem1": {
                             "enabled": true,
-                            "expected": [
-                                "^精選柑實罐頭$",
-                                "^精选柑实罐头$",
-                                "^シトロームの缶詰Ⅲ$",
-                                "^Canned Citrome A$"
-                            ]
+                            "custom_recognition_param": {
+                                "candidates": [
+                                    "精选柑实罐头",
+                                    "精選柑實罐頭",
+                                    "シトロームの缶詰Ⅲ",
+                                    "Canned Citrome A"
+                                ]
+                            }
                         },
                         "SellProductInfrastructureOutpostSellAttempt1SetMissHandler": {
                             "anchor": {
@@ -265,12 +271,14 @@
                     "pipeline_override": {
                         "SellProductInfrastructureOutpostSelectItem1": {
                             "enabled": true,
-                            "expected": [
-                                "^中容量谷地電池$",
-                                "^中容谷地电池$",
-                                "^中容量谷地バッテリー$",
-                                "^SC Valley Battery$"
-                            ]
+                            "custom_recognition_param": {
+                                "candidates": [
+                                    "中容谷地电池",
+                                    "中容量谷地電池",
+                                    "中容量谷地バッテリー",
+                                    "SC Valley Battery"
+                                ]
+                            }
                         },
                         "SellProductInfrastructureOutpostSellAttempt1SetMissHandler": {
                             "anchor": {
@@ -285,12 +293,14 @@
                     "pipeline_override": {
                         "SellProductInfrastructureOutpostSelectItem1": {
                             "enabled": true,
-                            "expected": [
-                                "^優質蕎癒膠囊$",
-                                "^优质荞愈胶囊$",
-                                "^蕎花カプセルⅡ$",
-                                "^Buck Capsule B$"
-                            ]
+                            "custom_recognition_param": {
+                                "candidates": [
+                                    "优质荞愈胶囊",
+                                    "優質蕎癒膠囊",
+                                    "蕎花カプセルⅡ",
+                                    "Buck Capsule B"
+                                ]
+                            }
                         },
                         "SellProductInfrastructureOutpostSellAttempt1SetMissHandler": {
                             "anchor": {
@@ -305,12 +315,14 @@
                     "pipeline_override": {
                         "SellProductInfrastructureOutpostSelectItem1": {
                             "enabled": true,
-                            "expected": [
-                                "^優質柑實罐頭$",
-                                "^优质柑实罐头$",
-                                "^シトロームの缶詰Ⅱ$",
-                                "^Canned Citrome B$"
-                            ]
+                            "custom_recognition_param": {
+                                "candidates": [
+                                    "优质柑实罐头",
+                                    "優質柑實罐頭",
+                                    "シトロームの缶詰Ⅱ",
+                                    "Canned Citrome B"
+                                ]
+                            }
                         },
                         "SellProductInfrastructureOutpostSellAttempt1SetMissHandler": {
                             "anchor": {
@@ -325,12 +337,14 @@
                     "pipeline_override": {
                         "SellProductInfrastructureOutpostSelectItem1": {
                             "enabled": true,
-                            "expected": [
-                                "^低容量谷地電池$",
-                                "^低容谷地电池$",
-                                "^小容量谷地バッテリー$",
-                                "^LC Valley Battery$"
-                            ]
+                            "custom_recognition_param": {
+                                "candidates": [
+                                    "低容谷地电池",
+                                    "低容量谷地電池",
+                                    "小容量谷地バッテリー",
+                                    "LC Valley Battery"
+                                ]
+                            }
                         },
                         "SellProductInfrastructureOutpostSellAttempt1SetMissHandler": {
                             "anchor": {
@@ -345,12 +359,14 @@
                     "pipeline_override": {
                         "SellProductInfrastructureOutpostSelectItem1": {
                             "enabled": true,
-                            "expected": [
-                                "^柑實罐頭$",
-                                "^柑实罐头$",
-                                "^シトロームの缶詰Ⅰ$",
-                                "^Canned Citrome C$"
-                            ]
+                            "custom_recognition_param": {
+                                "candidates": [
+                                    "柑实罐头",
+                                    "柑實罐頭",
+                                    "シトロームの缶詰Ⅰ",
+                                    "Canned Citrome C"
+                                ]
+                            }
                         },
                         "SellProductInfrastructureOutpostSellAttempt1SetMissHandler": {
                             "anchor": {
@@ -365,12 +381,14 @@
                     "pipeline_override": {
                         "SellProductInfrastructureOutpostSelectItem1": {
                             "enabled": true,
-                            "expected": [
-                                "^鐵製零件$",
-                                "^铁制零件$",
-                                "^鉄製部品$",
-                                "^Ferrium Part$"
-                            ]
+                            "custom_recognition_param": {
+                                "candidates": [
+                                    "铁制零件",
+                                    "鐵製零件",
+                                    "鉄製部品",
+                                    "Ferrium Part"
+                                ]
+                            }
                         },
                         "SellProductInfrastructureOutpostSellAttempt1SetMissHandler": {
                             "anchor": {
@@ -405,12 +423,14 @@
                     "pipeline_override": {
                         "SellProductInfrastructureOutpostSelectItem2": {
                             "enabled": true,
-                            "expected": [
-                                "^精選蕎癒膠囊$",
-                                "^精选荞愈胶囊$",
-                                "^蕎花カプセルⅢ$",
-                                "^Buck Capsule A$"
-                            ]
+                            "custom_recognition_param": {
+                                "candidates": [
+                                    "精选荞愈胶囊",
+                                    "精選蕎癒膠囊",
+                                    "蕎花カプセルⅢ",
+                                    "Buck Capsule A"
+                                ]
+                            }
                         },
                         "SellProductInfrastructureOutpostSellAttempt2SetMissHandler": {
                             "anchor": {
@@ -425,12 +445,14 @@
                     "pipeline_override": {
                         "SellProductInfrastructureOutpostSelectItem2": {
                             "enabled": true,
-                            "expected": [
-                                "^高容量谷地電池$",
-                                "^高容谷地电池$",
-                                "^大容量谷地バッテリー$",
-                                "^HC Valley Battery$"
-                            ]
+                            "custom_recognition_param": {
+                                "candidates": [
+                                    "高容谷地电池",
+                                    "高容量谷地電池",
+                                    "大容量谷地バッテリー",
+                                    "HC Valley Battery"
+                                ]
+                            }
                         },
                         "SellProductInfrastructureOutpostSellAttempt2SetMissHandler": {
                             "anchor": {
@@ -445,12 +467,14 @@
                     "pipeline_override": {
                         "SellProductInfrastructureOutpostSelectItem2": {
                             "enabled": true,
-                            "expected": [
-                                "^精選柑實罐頭$",
-                                "^精选柑实罐头$",
-                                "^シトロームの缶詰Ⅲ$",
-                                "^Canned Citrome A$"
-                            ]
+                            "custom_recognition_param": {
+                                "candidates": [
+                                    "精选柑实罐头",
+                                    "精選柑實罐頭",
+                                    "シトロームの缶詰Ⅲ",
+                                    "Canned Citrome A"
+                                ]
+                            }
                         },
                         "SellProductInfrastructureOutpostSellAttempt2SetMissHandler": {
                             "anchor": {
@@ -465,12 +489,14 @@
                     "pipeline_override": {
                         "SellProductInfrastructureOutpostSelectItem2": {
                             "enabled": true,
-                            "expected": [
-                                "^中容量谷地電池$",
-                                "^中容谷地电池$",
-                                "^中容量谷地バッテリー$",
-                                "^SC Valley Battery$"
-                            ]
+                            "custom_recognition_param": {
+                                "candidates": [
+                                    "中容谷地电池",
+                                    "中容量谷地電池",
+                                    "中容量谷地バッテリー",
+                                    "SC Valley Battery"
+                                ]
+                            }
                         },
                         "SellProductInfrastructureOutpostSellAttempt2SetMissHandler": {
                             "anchor": {
@@ -485,12 +511,14 @@
                     "pipeline_override": {
                         "SellProductInfrastructureOutpostSelectItem2": {
                             "enabled": true,
-                            "expected": [
-                                "^優質蕎癒膠囊$",
-                                "^优质荞愈胶囊$",
-                                "^蕎花カプセルⅡ$",
-                                "^Buck Capsule B$"
-                            ]
+                            "custom_recognition_param": {
+                                "candidates": [
+                                    "优质荞愈胶囊",
+                                    "優質蕎癒膠囊",
+                                    "蕎花カプセルⅡ",
+                                    "Buck Capsule B"
+                                ]
+                            }
                         },
                         "SellProductInfrastructureOutpostSellAttempt2SetMissHandler": {
                             "anchor": {
@@ -505,12 +533,14 @@
                     "pipeline_override": {
                         "SellProductInfrastructureOutpostSelectItem2": {
                             "enabled": true,
-                            "expected": [
-                                "^優質柑實罐頭$",
-                                "^优质柑实罐头$",
-                                "^シトロームの缶詰Ⅱ$",
-                                "^Canned Citrome B$"
-                            ]
+                            "custom_recognition_param": {
+                                "candidates": [
+                                    "优质柑实罐头",
+                                    "優質柑實罐頭",
+                                    "シトロームの缶詰Ⅱ",
+                                    "Canned Citrome B"
+                                ]
+                            }
                         },
                         "SellProductInfrastructureOutpostSellAttempt2SetMissHandler": {
                             "anchor": {
@@ -525,12 +555,14 @@
                     "pipeline_override": {
                         "SellProductInfrastructureOutpostSelectItem2": {
                             "enabled": true,
-                            "expected": [
-                                "^低容量谷地電池$",
-                                "^低容谷地电池$",
-                                "^小容量谷地バッテリー$",
-                                "^LC Valley Battery$"
-                            ]
+                            "custom_recognition_param": {
+                                "candidates": [
+                                    "低容谷地电池",
+                                    "低容量谷地電池",
+                                    "小容量谷地バッテリー",
+                                    "LC Valley Battery"
+                                ]
+                            }
                         },
                         "SellProductInfrastructureOutpostSellAttempt2SetMissHandler": {
                             "anchor": {
@@ -545,12 +577,14 @@
                     "pipeline_override": {
                         "SellProductInfrastructureOutpostSelectItem2": {
                             "enabled": true,
-                            "expected": [
-                                "^柑實罐頭$",
-                                "^柑实罐头$",
-                                "^シトロームの缶詰Ⅰ$",
-                                "^Canned Citrome C$"
-                            ]
+                            "custom_recognition_param": {
+                                "candidates": [
+                                    "柑实罐头",
+                                    "柑實罐頭",
+                                    "シトロームの缶詰Ⅰ",
+                                    "Canned Citrome C"
+                                ]
+                            }
                         },
                         "SellProductInfrastructureOutpostSellAttempt2SetMissHandler": {
                             "anchor": {
@@ -565,12 +599,14 @@
                     "pipeline_override": {
                         "SellProductInfrastructureOutpostSelectItem2": {
                             "enabled": true,
-                            "expected": [
-                                "^鐵製零件$",
-                                "^铁制零件$",
-                                "^鉄製部品$",
-                                "^Ferrium Part$"
-                            ]
+                            "custom_recognition_param": {
+                                "candidates": [
+                                    "铁制零件",
+                                    "鐵製零件",
+                                    "鉄製部品",
+                                    "Ferrium Part"
+                                ]
+                            }
                         },
                         "SellProductInfrastructureOutpostSellAttempt2SetMissHandler": {
                             "anchor": {
@@ -605,12 +641,14 @@
                     "pipeline_override": {
                         "SellProductInfrastructureOutpostSelectItem3": {
                             "enabled": true,
-                            "expected": [
-                                "^精選蕎癒膠囊$",
-                                "^精选荞愈胶囊$",
-                                "^蕎花カプセルⅢ$",
-                                "^Buck Capsule A$"
-                            ]
+                            "custom_recognition_param": {
+                                "candidates": [
+                                    "精选荞愈胶囊",
+                                    "精選蕎癒膠囊",
+                                    "蕎花カプセルⅢ",
+                                    "Buck Capsule A"
+                                ]
+                            }
                         },
                         "SellProductInfrastructureOutpostSellAttempt3SetMissHandler": {
                             "anchor": {
@@ -625,12 +663,14 @@
                     "pipeline_override": {
                         "SellProductInfrastructureOutpostSelectItem3": {
                             "enabled": true,
-                            "expected": [
-                                "^高容量谷地電池$",
-                                "^高容谷地电池$",
-                                "^大容量谷地バッテリー$",
-                                "^HC Valley Battery$"
-                            ]
+                            "custom_recognition_param": {
+                                "candidates": [
+                                    "高容谷地电池",
+                                    "高容量谷地電池",
+                                    "大容量谷地バッテリー",
+                                    "HC Valley Battery"
+                                ]
+                            }
                         },
                         "SellProductInfrastructureOutpostSellAttempt3SetMissHandler": {
                             "anchor": {
@@ -645,12 +685,14 @@
                     "pipeline_override": {
                         "SellProductInfrastructureOutpostSelectItem3": {
                             "enabled": true,
-                            "expected": [
-                                "^精選柑實罐頭$",
-                                "^精选柑实罐头$",
-                                "^シトロームの缶詰Ⅲ$",
-                                "^Canned Citrome A$"
-                            ]
+                            "custom_recognition_param": {
+                                "candidates": [
+                                    "精选柑实罐头",
+                                    "精選柑實罐頭",
+                                    "シトロームの缶詰Ⅲ",
+                                    "Canned Citrome A"
+                                ]
+                            }
                         },
                         "SellProductInfrastructureOutpostSellAttempt3SetMissHandler": {
                             "anchor": {
@@ -665,12 +707,14 @@
                     "pipeline_override": {
                         "SellProductInfrastructureOutpostSelectItem3": {
                             "enabled": true,
-                            "expected": [
-                                "^中容量谷地電池$",
-                                "^中容谷地电池$",
-                                "^中容量谷地バッテリー$",
-                                "^SC Valley Battery$"
-                            ]
+                            "custom_recognition_param": {
+                                "candidates": [
+                                    "中容谷地电池",
+                                    "中容量谷地電池",
+                                    "中容量谷地バッテリー",
+                                    "SC Valley Battery"
+                                ]
+                            }
                         },
                         "SellProductInfrastructureOutpostSellAttempt3SetMissHandler": {
                             "anchor": {
@@ -685,12 +729,14 @@
                     "pipeline_override": {
                         "SellProductInfrastructureOutpostSelectItem3": {
                             "enabled": true,
-                            "expected": [
-                                "^優質蕎癒膠囊$",
-                                "^优质荞愈胶囊$",
-                                "^蕎花カプセルⅡ$",
-                                "^Buck Capsule B$"
-                            ]
+                            "custom_recognition_param": {
+                                "candidates": [
+                                    "优质荞愈胶囊",
+                                    "優質蕎癒膠囊",
+                                    "蕎花カプセルⅡ",
+                                    "Buck Capsule B"
+                                ]
+                            }
                         },
                         "SellProductInfrastructureOutpostSellAttempt3SetMissHandler": {
                             "anchor": {
@@ -705,12 +751,14 @@
                     "pipeline_override": {
                         "SellProductInfrastructureOutpostSelectItem3": {
                             "enabled": true,
-                            "expected": [
-                                "^優質柑實罐頭$",
-                                "^优质柑实罐头$",
-                                "^シトロームの缶詰Ⅱ$",
-                                "^Canned Citrome B$"
-                            ]
+                            "custom_recognition_param": {
+                                "candidates": [
+                                    "优质柑实罐头",
+                                    "優質柑實罐頭",
+                                    "シトロームの缶詰Ⅱ",
+                                    "Canned Citrome B"
+                                ]
+                            }
                         },
                         "SellProductInfrastructureOutpostSellAttempt3SetMissHandler": {
                             "anchor": {
@@ -725,12 +773,14 @@
                     "pipeline_override": {
                         "SellProductInfrastructureOutpostSelectItem3": {
                             "enabled": true,
-                            "expected": [
-                                "^低容量谷地電池$",
-                                "^低容谷地电池$",
-                                "^小容量谷地バッテリー$",
-                                "^LC Valley Battery$"
-                            ]
+                            "custom_recognition_param": {
+                                "candidates": [
+                                    "低容谷地电池",
+                                    "低容量谷地電池",
+                                    "小容量谷地バッテリー",
+                                    "LC Valley Battery"
+                                ]
+                            }
                         },
                         "SellProductInfrastructureOutpostSellAttempt3SetMissHandler": {
                             "anchor": {
@@ -745,12 +795,14 @@
                     "pipeline_override": {
                         "SellProductInfrastructureOutpostSelectItem3": {
                             "enabled": true,
-                            "expected": [
-                                "^柑實罐頭$",
-                                "^柑实罐头$",
-                                "^シトロームの缶詰Ⅰ$",
-                                "^Canned Citrome C$"
-                            ]
+                            "custom_recognition_param": {
+                                "candidates": [
+                                    "柑实罐头",
+                                    "柑實罐頭",
+                                    "シトロームの缶詰Ⅰ",
+                                    "Canned Citrome C"
+                                ]
+                            }
                         },
                         "SellProductInfrastructureOutpostSellAttempt3SetMissHandler": {
                             "anchor": {
@@ -765,12 +817,14 @@
                     "pipeline_override": {
                         "SellProductInfrastructureOutpostSelectItem3": {
                             "enabled": true,
-                            "expected": [
-                                "^鐵製零件$",
-                                "^铁制零件$",
-                                "^鉄製部品$",
-                                "^Ferrium Part$"
-                            ]
+                            "custom_recognition_param": {
+                                "candidates": [
+                                    "铁制零件",
+                                    "鐵製零件",
+                                    "鉄製部品",
+                                    "Ferrium Part"
+                                ]
+                            }
                         },
                         "SellProductInfrastructureOutpostSellAttempt3SetMissHandler": {
                             "anchor": {
@@ -805,12 +859,14 @@
                     "pipeline_override": {
                         "SellProductInfrastructureOutpostSelectItem4": {
                             "enabled": true,
-                            "expected": [
-                                "^精選蕎癒膠囊$",
-                                "^精选荞愈胶囊$",
-                                "^蕎花カプセルⅢ$",
-                                "^Buck Capsule A$"
-                            ]
+                            "custom_recognition_param": {
+                                "candidates": [
+                                    "精选荞愈胶囊",
+                                    "精選蕎癒膠囊",
+                                    "蕎花カプセルⅢ",
+                                    "Buck Capsule A"
+                                ]
+                            }
                         },
                         "SellProductInfrastructureOutpostSellAttempt4SetMissHandler": {
                             "anchor": {
@@ -825,12 +881,14 @@
                     "pipeline_override": {
                         "SellProductInfrastructureOutpostSelectItem4": {
                             "enabled": true,
-                            "expected": [
-                                "^高容量谷地電池$",
-                                "^高容谷地电池$",
-                                "^大容量谷地バッテリー$",
-                                "^HC Valley Battery$"
-                            ]
+                            "custom_recognition_param": {
+                                "candidates": [
+                                    "高容谷地电池",
+                                    "高容量谷地電池",
+                                    "大容量谷地バッテリー",
+                                    "HC Valley Battery"
+                                ]
+                            }
                         },
                         "SellProductInfrastructureOutpostSellAttempt4SetMissHandler": {
                             "anchor": {
@@ -845,12 +903,14 @@
                     "pipeline_override": {
                         "SellProductInfrastructureOutpostSelectItem4": {
                             "enabled": true,
-                            "expected": [
-                                "^精選柑實罐頭$",
-                                "^精选柑实罐头$",
-                                "^シトロームの缶詰Ⅲ$",
-                                "^Canned Citrome A$"
-                            ]
+                            "custom_recognition_param": {
+                                "candidates": [
+                                    "精选柑实罐头",
+                                    "精選柑實罐頭",
+                                    "シトロームの缶詰Ⅲ",
+                                    "Canned Citrome A"
+                                ]
+                            }
                         },
                         "SellProductInfrastructureOutpostSellAttempt4SetMissHandler": {
                             "anchor": {
@@ -865,12 +925,14 @@
                     "pipeline_override": {
                         "SellProductInfrastructureOutpostSelectItem4": {
                             "enabled": true,
-                            "expected": [
-                                "^中容量谷地電池$",
-                                "^中容谷地电池$",
-                                "^中容量谷地バッテリー$",
-                                "^SC Valley Battery$"
-                            ]
+                            "custom_recognition_param": {
+                                "candidates": [
+                                    "中容谷地电池",
+                                    "中容量谷地電池",
+                                    "中容量谷地バッテリー",
+                                    "SC Valley Battery"
+                                ]
+                            }
                         },
                         "SellProductInfrastructureOutpostSellAttempt4SetMissHandler": {
                             "anchor": {
@@ -885,12 +947,14 @@
                     "pipeline_override": {
                         "SellProductInfrastructureOutpostSelectItem4": {
                             "enabled": true,
-                            "expected": [
-                                "^優質蕎癒膠囊$",
-                                "^优质荞愈胶囊$",
-                                "^蕎花カプセルⅡ$",
-                                "^Buck Capsule B$"
-                            ]
+                            "custom_recognition_param": {
+                                "candidates": [
+                                    "优质荞愈胶囊",
+                                    "優質蕎癒膠囊",
+                                    "蕎花カプセルⅡ",
+                                    "Buck Capsule B"
+                                ]
+                            }
                         },
                         "SellProductInfrastructureOutpostSellAttempt4SetMissHandler": {
                             "anchor": {
@@ -905,12 +969,14 @@
                     "pipeline_override": {
                         "SellProductInfrastructureOutpostSelectItem4": {
                             "enabled": true,
-                            "expected": [
-                                "^優質柑實罐頭$",
-                                "^优质柑实罐头$",
-                                "^シトロームの缶詰Ⅱ$",
-                                "^Canned Citrome B$"
-                            ]
+                            "custom_recognition_param": {
+                                "candidates": [
+                                    "优质柑实罐头",
+                                    "優質柑實罐頭",
+                                    "シトロームの缶詰Ⅱ",
+                                    "Canned Citrome B"
+                                ]
+                            }
                         },
                         "SellProductInfrastructureOutpostSellAttempt4SetMissHandler": {
                             "anchor": {
@@ -925,12 +991,14 @@
                     "pipeline_override": {
                         "SellProductInfrastructureOutpostSelectItem4": {
                             "enabled": true,
-                            "expected": [
-                                "^低容量谷地電池$",
-                                "^低容谷地电池$",
-                                "^小容量谷地バッテリー$",
-                                "^LC Valley Battery$"
-                            ]
+                            "custom_recognition_param": {
+                                "candidates": [
+                                    "低容谷地电池",
+                                    "低容量谷地電池",
+                                    "小容量谷地バッテリー",
+                                    "LC Valley Battery"
+                                ]
+                            }
                         },
                         "SellProductInfrastructureOutpostSellAttempt4SetMissHandler": {
                             "anchor": {
@@ -945,12 +1013,14 @@
                     "pipeline_override": {
                         "SellProductInfrastructureOutpostSelectItem4": {
                             "enabled": true,
-                            "expected": [
-                                "^柑實罐頭$",
-                                "^柑实罐头$",
-                                "^シトロームの缶詰Ⅰ$",
-                                "^Canned Citrome C$"
-                            ]
+                            "custom_recognition_param": {
+                                "candidates": [
+                                    "柑实罐头",
+                                    "柑實罐頭",
+                                    "シトロームの缶詰Ⅰ",
+                                    "Canned Citrome C"
+                                ]
+                            }
                         },
                         "SellProductInfrastructureOutpostSellAttempt4SetMissHandler": {
                             "anchor": {
@@ -965,12 +1035,14 @@
                     "pipeline_override": {
                         "SellProductInfrastructureOutpostSelectItem4": {
                             "enabled": true,
-                            "expected": [
-                                "^鐵製零件$",
-                                "^铁制零件$",
-                                "^鉄製部品$",
-                                "^Ferrium Part$"
-                            ]
+                            "custom_recognition_param": {
+                                "candidates": [
+                                    "铁制零件",
+                                    "鐵製零件",
+                                    "鉄製部品",
+                                    "Ferrium Part"
+                                ]
+                            }
                         },
                         "SellProductInfrastructureOutpostSellAttempt4SetMissHandler": {
                             "anchor": {
@@ -1311,12 +1383,14 @@
                     "pipeline_override": {
                         "SellProductReconstructionCommandSelectItem1": {
                             "enabled": true,
-                            "expected": [
-                                "^精選蕎癒膠囊$",
-                                "^精选荞愈胶囊$",
-                                "^蕎花カプセルⅢ$",
-                                "^Buck Capsule A$"
-                            ]
+                            "custom_recognition_param": {
+                                "candidates": [
+                                    "精选荞愈胶囊",
+                                    "精選蕎癒膠囊",
+                                    "蕎花カプセルⅢ",
+                                    "Buck Capsule A"
+                                ]
+                            }
                         },
                         "SellProductReconstructionCommandSellAttempt1SetMissHandler": {
                             "anchor": {
@@ -1331,12 +1405,14 @@
                     "pipeline_override": {
                         "SellProductReconstructionCommandSelectItem1": {
                             "enabled": true,
-                            "expected": [
-                                "^高容量谷地電池$",
-                                "^高容谷地电池$",
-                                "^大容量谷地バッテリー$",
-                                "^HC Valley Battery$"
-                            ]
+                            "custom_recognition_param": {
+                                "candidates": [
+                                    "高容谷地电池",
+                                    "高容量谷地電池",
+                                    "大容量谷地バッテリー",
+                                    "HC Valley Battery"
+                                ]
+                            }
                         },
                         "SellProductReconstructionCommandSellAttempt1SetMissHandler": {
                             "anchor": {
@@ -1351,12 +1427,14 @@
                     "pipeline_override": {
                         "SellProductReconstructionCommandSelectItem1": {
                             "enabled": true,
-                            "expected": [
-                                "^精選柑實罐頭$",
-                                "^精选柑实罐头$",
-                                "^シトロームの缶詰Ⅲ$",
-                                "^Canned Citrome A$"
-                            ]
+                            "custom_recognition_param": {
+                                "candidates": [
+                                    "精选柑实罐头",
+                                    "精選柑實罐頭",
+                                    "シトロームの缶詰Ⅲ",
+                                    "Canned Citrome A"
+                                ]
+                            }
                         },
                         "SellProductReconstructionCommandSellAttempt1SetMissHandler": {
                             "anchor": {
@@ -1371,12 +1449,14 @@
                     "pipeline_override": {
                         "SellProductReconstructionCommandSelectItem1": {
                             "enabled": true,
-                            "expected": [
-                                "^中容量谷地電池$",
-                                "^中容谷地电池$",
-                                "^中容量谷地バッテリー$",
-                                "^SC Valley Battery$"
-                            ]
+                            "custom_recognition_param": {
+                                "candidates": [
+                                    "中容谷地电池",
+                                    "中容量谷地電池",
+                                    "中容量谷地バッテリー",
+                                    "SC Valley Battery"
+                                ]
+                            }
                         },
                         "SellProductReconstructionCommandSellAttempt1SetMissHandler": {
                             "anchor": {
@@ -1391,12 +1471,14 @@
                     "pipeline_override": {
                         "SellProductReconstructionCommandSelectItem1": {
                             "enabled": true,
-                            "expected": [
-                                "^優質蕎癒膠囊$",
-                                "^优质荞愈胶囊$",
-                                "^蕎花カプセルⅡ$",
-                                "^Buck Capsule B$"
-                            ]
+                            "custom_recognition_param": {
+                                "candidates": [
+                                    "优质荞愈胶囊",
+                                    "優質蕎癒膠囊",
+                                    "蕎花カプセルⅡ",
+                                    "Buck Capsule B"
+                                ]
+                            }
                         },
                         "SellProductReconstructionCommandSellAttempt1SetMissHandler": {
                             "anchor": {
@@ -1411,12 +1493,14 @@
                     "pipeline_override": {
                         "SellProductReconstructionCommandSelectItem1": {
                             "enabled": true,
-                            "expected": [
-                                "^優質柑實罐頭$",
-                                "^优质柑实罐头$",
-                                "^シトロームの缶詰Ⅱ$",
-                                "^Canned Citrome B$"
-                            ]
+                            "custom_recognition_param": {
+                                "candidates": [
+                                    "优质柑实罐头",
+                                    "優質柑實罐頭",
+                                    "シトロームの缶詰Ⅱ",
+                                    "Canned Citrome B"
+                                ]
+                            }
                         },
                         "SellProductReconstructionCommandSellAttempt1SetMissHandler": {
                             "anchor": {
@@ -1431,12 +1515,14 @@
                     "pipeline_override": {
                         "SellProductReconstructionCommandSelectItem1": {
                             "enabled": true,
-                            "expected": [
-                                "^柑實罐頭$",
-                                "^柑实罐头$",
-                                "^シトロームの缶詰Ⅰ$",
-                                "^Canned Citrome C$"
-                            ]
+                            "custom_recognition_param": {
+                                "candidates": [
+                                    "柑实罐头",
+                                    "柑實罐頭",
+                                    "シトロームの缶詰Ⅰ",
+                                    "Canned Citrome C"
+                                ]
+                            }
                         },
                         "SellProductReconstructionCommandSellAttempt1SetMissHandler": {
                             "anchor": {
@@ -1451,12 +1537,14 @@
                     "pipeline_override": {
                         "SellProductReconstructionCommandSelectItem1": {
                             "enabled": true,
-                            "expected": [
-                                "^鋼製零件$",
-                                "^钢制零件$",
-                                "^鋼製部品$",
-                                "^Steel Part$"
-                            ]
+                            "custom_recognition_param": {
+                                "candidates": [
+                                    "钢制零件",
+                                    "鋼製零件",
+                                    "鋼製部品",
+                                    "Steel Part"
+                                ]
+                            }
                         },
                         "SellProductReconstructionCommandSellAttempt1SetMissHandler": {
                             "anchor": {
@@ -1491,12 +1579,14 @@
                     "pipeline_override": {
                         "SellProductReconstructionCommandSelectItem2": {
                             "enabled": true,
-                            "expected": [
-                                "^精選蕎癒膠囊$",
-                                "^精选荞愈胶囊$",
-                                "^蕎花カプセルⅢ$",
-                                "^Buck Capsule A$"
-                            ]
+                            "custom_recognition_param": {
+                                "candidates": [
+                                    "精选荞愈胶囊",
+                                    "精選蕎癒膠囊",
+                                    "蕎花カプセルⅢ",
+                                    "Buck Capsule A"
+                                ]
+                            }
                         },
                         "SellProductReconstructionCommandSellAttempt2SetMissHandler": {
                             "anchor": {
@@ -1511,12 +1601,14 @@
                     "pipeline_override": {
                         "SellProductReconstructionCommandSelectItem2": {
                             "enabled": true,
-                            "expected": [
-                                "^高容量谷地電池$",
-                                "^高容谷地电池$",
-                                "^大容量谷地バッテリー$",
-                                "^HC Valley Battery$"
-                            ]
+                            "custom_recognition_param": {
+                                "candidates": [
+                                    "高容谷地电池",
+                                    "高容量谷地電池",
+                                    "大容量谷地バッテリー",
+                                    "HC Valley Battery"
+                                ]
+                            }
                         },
                         "SellProductReconstructionCommandSellAttempt2SetMissHandler": {
                             "anchor": {
@@ -1531,12 +1623,14 @@
                     "pipeline_override": {
                         "SellProductReconstructionCommandSelectItem2": {
                             "enabled": true,
-                            "expected": [
-                                "^精選柑實罐頭$",
-                                "^精选柑实罐头$",
-                                "^シトロームの缶詰Ⅲ$",
-                                "^Canned Citrome A$"
-                            ]
+                            "custom_recognition_param": {
+                                "candidates": [
+                                    "精选柑实罐头",
+                                    "精選柑實罐頭",
+                                    "シトロームの缶詰Ⅲ",
+                                    "Canned Citrome A"
+                                ]
+                            }
                         },
                         "SellProductReconstructionCommandSellAttempt2SetMissHandler": {
                             "anchor": {
@@ -1551,12 +1645,14 @@
                     "pipeline_override": {
                         "SellProductReconstructionCommandSelectItem2": {
                             "enabled": true,
-                            "expected": [
-                                "^中容量谷地電池$",
-                                "^中容谷地电池$",
-                                "^中容量谷地バッテリー$",
-                                "^SC Valley Battery$"
-                            ]
+                            "custom_recognition_param": {
+                                "candidates": [
+                                    "中容谷地电池",
+                                    "中容量谷地電池",
+                                    "中容量谷地バッテリー",
+                                    "SC Valley Battery"
+                                ]
+                            }
                         },
                         "SellProductReconstructionCommandSellAttempt2SetMissHandler": {
                             "anchor": {
@@ -1571,12 +1667,14 @@
                     "pipeline_override": {
                         "SellProductReconstructionCommandSelectItem2": {
                             "enabled": true,
-                            "expected": [
-                                "^優質蕎癒膠囊$",
-                                "^优质荞愈胶囊$",
-                                "^蕎花カプセルⅡ$",
-                                "^Buck Capsule B$"
-                            ]
+                            "custom_recognition_param": {
+                                "candidates": [
+                                    "优质荞愈胶囊",
+                                    "優質蕎癒膠囊",
+                                    "蕎花カプセルⅡ",
+                                    "Buck Capsule B"
+                                ]
+                            }
                         },
                         "SellProductReconstructionCommandSellAttempt2SetMissHandler": {
                             "anchor": {
@@ -1591,12 +1689,14 @@
                     "pipeline_override": {
                         "SellProductReconstructionCommandSelectItem2": {
                             "enabled": true,
-                            "expected": [
-                                "^優質柑實罐頭$",
-                                "^优质柑实罐头$",
-                                "^シトロームの缶詰Ⅱ$",
-                                "^Canned Citrome B$"
-                            ]
+                            "custom_recognition_param": {
+                                "candidates": [
+                                    "优质柑实罐头",
+                                    "優質柑實罐頭",
+                                    "シトロームの缶詰Ⅱ",
+                                    "Canned Citrome B"
+                                ]
+                            }
                         },
                         "SellProductReconstructionCommandSellAttempt2SetMissHandler": {
                             "anchor": {
@@ -1611,12 +1711,14 @@
                     "pipeline_override": {
                         "SellProductReconstructionCommandSelectItem2": {
                             "enabled": true,
-                            "expected": [
-                                "^柑實罐頭$",
-                                "^柑实罐头$",
-                                "^シトロームの缶詰Ⅰ$",
-                                "^Canned Citrome C$"
-                            ]
+                            "custom_recognition_param": {
+                                "candidates": [
+                                    "柑实罐头",
+                                    "柑實罐頭",
+                                    "シトロームの缶詰Ⅰ",
+                                    "Canned Citrome C"
+                                ]
+                            }
                         },
                         "SellProductReconstructionCommandSellAttempt2SetMissHandler": {
                             "anchor": {
@@ -1631,12 +1733,14 @@
                     "pipeline_override": {
                         "SellProductReconstructionCommandSelectItem2": {
                             "enabled": true,
-                            "expected": [
-                                "^鋼製零件$",
-                                "^钢制零件$",
-                                "^鋼製部品$",
-                                "^Steel Part$"
-                            ]
+                            "custom_recognition_param": {
+                                "candidates": [
+                                    "钢制零件",
+                                    "鋼製零件",
+                                    "鋼製部品",
+                                    "Steel Part"
+                                ]
+                            }
                         },
                         "SellProductReconstructionCommandSellAttempt2SetMissHandler": {
                             "anchor": {
@@ -1671,12 +1775,14 @@
                     "pipeline_override": {
                         "SellProductReconstructionCommandSelectItem3": {
                             "enabled": true,
-                            "expected": [
-                                "^精選蕎癒膠囊$",
-                                "^精选荞愈胶囊$",
-                                "^蕎花カプセルⅢ$",
-                                "^Buck Capsule A$"
-                            ]
+                            "custom_recognition_param": {
+                                "candidates": [
+                                    "精选荞愈胶囊",
+                                    "精選蕎癒膠囊",
+                                    "蕎花カプセルⅢ",
+                                    "Buck Capsule A"
+                                ]
+                            }
                         },
                         "SellProductReconstructionCommandSellAttempt3SetMissHandler": {
                             "anchor": {
@@ -1691,12 +1797,14 @@
                     "pipeline_override": {
                         "SellProductReconstructionCommandSelectItem3": {
                             "enabled": true,
-                            "expected": [
-                                "^高容量谷地電池$",
-                                "^高容谷地电池$",
-                                "^大容量谷地バッテリー$",
-                                "^HC Valley Battery$"
-                            ]
+                            "custom_recognition_param": {
+                                "candidates": [
+                                    "高容谷地电池",
+                                    "高容量谷地電池",
+                                    "大容量谷地バッテリー",
+                                    "HC Valley Battery"
+                                ]
+                            }
                         },
                         "SellProductReconstructionCommandSellAttempt3SetMissHandler": {
                             "anchor": {
@@ -1711,12 +1819,14 @@
                     "pipeline_override": {
                         "SellProductReconstructionCommandSelectItem3": {
                             "enabled": true,
-                            "expected": [
-                                "^精選柑實罐頭$",
-                                "^精选柑实罐头$",
-                                "^シトロームの缶詰Ⅲ$",
-                                "^Canned Citrome A$"
-                            ]
+                            "custom_recognition_param": {
+                                "candidates": [
+                                    "精选柑实罐头",
+                                    "精選柑實罐頭",
+                                    "シトロームの缶詰Ⅲ",
+                                    "Canned Citrome A"
+                                ]
+                            }
                         },
                         "SellProductReconstructionCommandSellAttempt3SetMissHandler": {
                             "anchor": {
@@ -1731,12 +1841,14 @@
                     "pipeline_override": {
                         "SellProductReconstructionCommandSelectItem3": {
                             "enabled": true,
-                            "expected": [
-                                "^中容量谷地電池$",
-                                "^中容谷地电池$",
-                                "^中容量谷地バッテリー$",
-                                "^SC Valley Battery$"
-                            ]
+                            "custom_recognition_param": {
+                                "candidates": [
+                                    "中容谷地电池",
+                                    "中容量谷地電池",
+                                    "中容量谷地バッテリー",
+                                    "SC Valley Battery"
+                                ]
+                            }
                         },
                         "SellProductReconstructionCommandSellAttempt3SetMissHandler": {
                             "anchor": {
@@ -1751,12 +1863,14 @@
                     "pipeline_override": {
                         "SellProductReconstructionCommandSelectItem3": {
                             "enabled": true,
-                            "expected": [
-                                "^優質蕎癒膠囊$",
-                                "^优质荞愈胶囊$",
-                                "^蕎花カプセルⅡ$",
-                                "^Buck Capsule B$"
-                            ]
+                            "custom_recognition_param": {
+                                "candidates": [
+                                    "优质荞愈胶囊",
+                                    "優質蕎癒膠囊",
+                                    "蕎花カプセルⅡ",
+                                    "Buck Capsule B"
+                                ]
+                            }
                         },
                         "SellProductReconstructionCommandSellAttempt3SetMissHandler": {
                             "anchor": {
@@ -1771,12 +1885,14 @@
                     "pipeline_override": {
                         "SellProductReconstructionCommandSelectItem3": {
                             "enabled": true,
-                            "expected": [
-                                "^優質柑實罐頭$",
-                                "^优质柑实罐头$",
-                                "^シトロームの缶詰Ⅱ$",
-                                "^Canned Citrome B$"
-                            ]
+                            "custom_recognition_param": {
+                                "candidates": [
+                                    "优质柑实罐头",
+                                    "優質柑實罐頭",
+                                    "シトロームの缶詰Ⅱ",
+                                    "Canned Citrome B"
+                                ]
+                            }
                         },
                         "SellProductReconstructionCommandSellAttempt3SetMissHandler": {
                             "anchor": {
@@ -1791,12 +1907,14 @@
                     "pipeline_override": {
                         "SellProductReconstructionCommandSelectItem3": {
                             "enabled": true,
-                            "expected": [
-                                "^柑實罐頭$",
-                                "^柑实罐头$",
-                                "^シトロームの缶詰Ⅰ$",
-                                "^Canned Citrome C$"
-                            ]
+                            "custom_recognition_param": {
+                                "candidates": [
+                                    "柑实罐头",
+                                    "柑實罐頭",
+                                    "シトロームの缶詰Ⅰ",
+                                    "Canned Citrome C"
+                                ]
+                            }
                         },
                         "SellProductReconstructionCommandSellAttempt3SetMissHandler": {
                             "anchor": {
@@ -1811,12 +1929,14 @@
                     "pipeline_override": {
                         "SellProductReconstructionCommandSelectItem3": {
                             "enabled": true,
-                            "expected": [
-                                "^鋼製零件$",
-                                "^钢制零件$",
-                                "^鋼製部品$",
-                                "^Steel Part$"
-                            ]
+                            "custom_recognition_param": {
+                                "candidates": [
+                                    "钢制零件",
+                                    "鋼製零件",
+                                    "鋼製部品",
+                                    "Steel Part"
+                                ]
+                            }
                         },
                         "SellProductReconstructionCommandSellAttempt3SetMissHandler": {
                             "anchor": {
@@ -1851,12 +1971,14 @@
                     "pipeline_override": {
                         "SellProductReconstructionCommandSelectItem4": {
                             "enabled": true,
-                            "expected": [
-                                "^精選蕎癒膠囊$",
-                                "^精选荞愈胶囊$",
-                                "^蕎花カプセルⅢ$",
-                                "^Buck Capsule A$"
-                            ]
+                            "custom_recognition_param": {
+                                "candidates": [
+                                    "精选荞愈胶囊",
+                                    "精選蕎癒膠囊",
+                                    "蕎花カプセルⅢ",
+                                    "Buck Capsule A"
+                                ]
+                            }
                         },
                         "SellProductReconstructionCommandSellAttempt4SetMissHandler": {
                             "anchor": {
@@ -1871,12 +1993,14 @@
                     "pipeline_override": {
                         "SellProductReconstructionCommandSelectItem4": {
                             "enabled": true,
-                            "expected": [
-                                "^高容量谷地電池$",
-                                "^高容谷地电池$",
-                                "^大容量谷地バッテリー$",
-                                "^HC Valley Battery$"
-                            ]
+                            "custom_recognition_param": {
+                                "candidates": [
+                                    "高容谷地电池",
+                                    "高容量谷地電池",
+                                    "大容量谷地バッテリー",
+                                    "HC Valley Battery"
+                                ]
+                            }
                         },
                         "SellProductReconstructionCommandSellAttempt4SetMissHandler": {
                             "anchor": {
@@ -1891,12 +2015,14 @@
                     "pipeline_override": {
                         "SellProductReconstructionCommandSelectItem4": {
                             "enabled": true,
-                            "expected": [
-                                "^精選柑實罐頭$",
-                                "^精选柑实罐头$",
-                                "^シトロームの缶詰Ⅲ$",
-                                "^Canned Citrome A$"
-                            ]
+                            "custom_recognition_param": {
+                                "candidates": [
+                                    "精选柑实罐头",
+                                    "精選柑實罐頭",
+                                    "シトロームの缶詰Ⅲ",
+                                    "Canned Citrome A"
+                                ]
+                            }
                         },
                         "SellProductReconstructionCommandSellAttempt4SetMissHandler": {
                             "anchor": {
@@ -1911,12 +2037,14 @@
                     "pipeline_override": {
                         "SellProductReconstructionCommandSelectItem4": {
                             "enabled": true,
-                            "expected": [
-                                "^中容量谷地電池$",
-                                "^中容谷地电池$",
-                                "^中容量谷地バッテリー$",
-                                "^SC Valley Battery$"
-                            ]
+                            "custom_recognition_param": {
+                                "candidates": [
+                                    "中容谷地电池",
+                                    "中容量谷地電池",
+                                    "中容量谷地バッテリー",
+                                    "SC Valley Battery"
+                                ]
+                            }
                         },
                         "SellProductReconstructionCommandSellAttempt4SetMissHandler": {
                             "anchor": {
@@ -1931,12 +2059,14 @@
                     "pipeline_override": {
                         "SellProductReconstructionCommandSelectItem4": {
                             "enabled": true,
-                            "expected": [
-                                "^優質蕎癒膠囊$",
-                                "^优质荞愈胶囊$",
-                                "^蕎花カプセルⅡ$",
-                                "^Buck Capsule B$"
-                            ]
+                            "custom_recognition_param": {
+                                "candidates": [
+                                    "优质荞愈胶囊",
+                                    "優質蕎癒膠囊",
+                                    "蕎花カプセルⅡ",
+                                    "Buck Capsule B"
+                                ]
+                            }
                         },
                         "SellProductReconstructionCommandSellAttempt4SetMissHandler": {
                             "anchor": {
@@ -1951,12 +2081,14 @@
                     "pipeline_override": {
                         "SellProductReconstructionCommandSelectItem4": {
                             "enabled": true,
-                            "expected": [
-                                "^優質柑實罐頭$",
-                                "^优质柑实罐头$",
-                                "^シトロームの缶詰Ⅱ$",
-                                "^Canned Citrome B$"
-                            ]
+                            "custom_recognition_param": {
+                                "candidates": [
+                                    "优质柑实罐头",
+                                    "優質柑實罐頭",
+                                    "シトロームの缶詰Ⅱ",
+                                    "Canned Citrome B"
+                                ]
+                            }
                         },
                         "SellProductReconstructionCommandSellAttempt4SetMissHandler": {
                             "anchor": {
@@ -1971,12 +2103,14 @@
                     "pipeline_override": {
                         "SellProductReconstructionCommandSelectItem4": {
                             "enabled": true,
-                            "expected": [
-                                "^柑實罐頭$",
-                                "^柑实罐头$",
-                                "^シトロームの缶詰Ⅰ$",
-                                "^Canned Citrome C$"
-                            ]
+                            "custom_recognition_param": {
+                                "candidates": [
+                                    "柑实罐头",
+                                    "柑實罐頭",
+                                    "シトロームの缶詰Ⅰ",
+                                    "Canned Citrome C"
+                                ]
+                            }
                         },
                         "SellProductReconstructionCommandSellAttempt4SetMissHandler": {
                             "anchor": {
@@ -1991,12 +2125,14 @@
                     "pipeline_override": {
                         "SellProductReconstructionCommandSelectItem4": {
                             "enabled": true,
-                            "expected": [
-                                "^鋼製零件$",
-                                "^钢制零件$",
-                                "^鋼製部品$",
-                                "^Steel Part$"
-                            ]
+                            "custom_recognition_param": {
+                                "candidates": [
+                                    "钢制零件",
+                                    "鋼製零件",
+                                    "鋼製部品",
+                                    "Steel Part"
+                                ]
+                            }
                         },
                         "SellProductReconstructionCommandSellAttempt4SetMissHandler": {
                             "anchor": {
@@ -2337,12 +2473,14 @@
                     "pipeline_override": {
                         "SellProductRefugeeCampSelectItem1": {
                             "enabled": true,
-                            "expected": [
-                                "^精選蕎癒膠囊$",
-                                "^精选荞愈胶囊$",
-                                "^蕎花カプセルⅢ$",
-                                "^Buck Capsule A$"
-                            ]
+                            "custom_recognition_param": {
+                                "candidates": [
+                                    "精选荞愈胶囊",
+                                    "精選蕎癒膠囊",
+                                    "蕎花カプセルⅢ",
+                                    "Buck Capsule A"
+                                ]
+                            }
                         },
                         "SellProductRefugeeCampSellAttempt1SetMissHandler": {
                             "anchor": {
@@ -2357,12 +2495,14 @@
                     "pipeline_override": {
                         "SellProductRefugeeCampSelectItem1": {
                             "enabled": true,
-                            "expected": [
-                                "^高容量谷地電池$",
-                                "^高容谷地电池$",
-                                "^大容量谷地バッテリー$",
-                                "^HC Valley Battery$"
-                            ]
+                            "custom_recognition_param": {
+                                "candidates": [
+                                    "高容谷地电池",
+                                    "高容量谷地電池",
+                                    "大容量谷地バッテリー",
+                                    "HC Valley Battery"
+                                ]
+                            }
                         },
                         "SellProductRefugeeCampSellAttempt1SetMissHandler": {
                             "anchor": {
@@ -2377,12 +2517,14 @@
                     "pipeline_override": {
                         "SellProductRefugeeCampSelectItem1": {
                             "enabled": true,
-                            "expected": [
-                                "^精選柑實罐頭$",
-                                "^精选柑实罐头$",
-                                "^シトロームの缶詰Ⅲ$",
-                                "^Canned Citrome A$"
-                            ]
+                            "custom_recognition_param": {
+                                "candidates": [
+                                    "精选柑实罐头",
+                                    "精選柑實罐頭",
+                                    "シトロームの缶詰Ⅲ",
+                                    "Canned Citrome A"
+                                ]
+                            }
                         },
                         "SellProductRefugeeCampSellAttempt1SetMissHandler": {
                             "anchor": {
@@ -2397,12 +2539,14 @@
                     "pipeline_override": {
                         "SellProductRefugeeCampSelectItem1": {
                             "enabled": true,
-                            "expected": [
-                                "^中容量谷地電池$",
-                                "^中容谷地电池$",
-                                "^中容量谷地バッテリー$",
-                                "^SC Valley Battery$"
-                            ]
+                            "custom_recognition_param": {
+                                "candidates": [
+                                    "中容谷地电池",
+                                    "中容量谷地電池",
+                                    "中容量谷地バッテリー",
+                                    "SC Valley Battery"
+                                ]
+                            }
                         },
                         "SellProductRefugeeCampSellAttempt1SetMissHandler": {
                             "anchor": {
@@ -2417,12 +2561,14 @@
                     "pipeline_override": {
                         "SellProductRefugeeCampSelectItem1": {
                             "enabled": true,
-                            "expected": [
-                                "^優質蕎癒膠囊$",
-                                "^优质荞愈胶囊$",
-                                "^蕎花カプセルⅡ$",
-                                "^Buck Capsule B$"
-                            ]
+                            "custom_recognition_param": {
+                                "candidates": [
+                                    "优质荞愈胶囊",
+                                    "優質蕎癒膠囊",
+                                    "蕎花カプセルⅡ",
+                                    "Buck Capsule B"
+                                ]
+                            }
                         },
                         "SellProductRefugeeCampSellAttempt1SetMissHandler": {
                             "anchor": {
@@ -2437,12 +2583,14 @@
                     "pipeline_override": {
                         "SellProductRefugeeCampSelectItem1": {
                             "enabled": true,
-                            "expected": [
-                                "^優質柑實罐頭$",
-                                "^优质柑实罐头$",
-                                "^シトロームの缶詰Ⅱ$",
-                                "^Canned Citrome B$"
-                            ]
+                            "custom_recognition_param": {
+                                "candidates": [
+                                    "优质柑实罐头",
+                                    "優質柑實罐頭",
+                                    "シトロームの缶詰Ⅱ",
+                                    "Canned Citrome B"
+                                ]
+                            }
                         },
                         "SellProductRefugeeCampSellAttempt1SetMissHandler": {
                             "anchor": {
@@ -2457,12 +2605,14 @@
                     "pipeline_override": {
                         "SellProductRefugeeCampSelectItem1": {
                             "enabled": true,
-                            "expected": [
-                                "^蕎癒膠囊$",
-                                "^荞愈胶囊$",
-                                "^蕎花カプセルⅠ$",
-                                "^Buck Capsule C$"
-                            ]
+                            "custom_recognition_param": {
+                                "candidates": [
+                                    "荞愈胶囊",
+                                    "蕎癒膠囊",
+                                    "蕎花カプセルⅠ",
+                                    "Buck Capsule C"
+                                ]
+                            }
                         },
                         "SellProductRefugeeCampSellAttempt1SetMissHandler": {
                             "anchor": {
@@ -2477,12 +2627,14 @@
                     "pipeline_override": {
                         "SellProductRefugeeCampSelectItem1": {
                             "enabled": true,
-                            "expected": [
-                                "^柑實罐頭$",
-                                "^柑实罐头$",
-                                "^シトロームの缶詰Ⅰ$",
-                                "^Canned Citrome C$"
-                            ]
+                            "custom_recognition_param": {
+                                "candidates": [
+                                    "柑实罐头",
+                                    "柑實罐頭",
+                                    "シトロームの缶詰Ⅰ",
+                                    "Canned Citrome C"
+                                ]
+                            }
                         },
                         "SellProductRefugeeCampSellAttempt1SetMissHandler": {
                             "anchor": {
@@ -2497,12 +2649,14 @@
                     "pipeline_override": {
                         "SellProductRefugeeCampSelectItem1": {
                             "enabled": true,
-                            "expected": [
-                                "^紫晶質瓶$",
-                                "^紫晶质瓶$",
-                                "^紫晶製ボトル$",
-                                "^Amethyst Bottle$"
-                            ]
+                            "custom_recognition_param": {
+                                "candidates": [
+                                    "紫晶质瓶",
+                                    "紫晶質瓶",
+                                    "紫晶製ボトル",
+                                    "Amethyst Bottle"
+                                ]
+                            }
                         },
                         "SellProductRefugeeCampSellAttempt1SetMissHandler": {
                             "anchor": {
@@ -2517,12 +2671,14 @@
                     "pipeline_override": {
                         "SellProductRefugeeCampSelectItem1": {
                             "enabled": true,
-                            "expected": [
-                                "^晶體外殼$",
-                                "^晶体外壳$",
-                                "^結晶外殻$",
-                                "^Origocrust$"
-                            ]
+                            "custom_recognition_param": {
+                                "candidates": [
+                                    "晶体外壳",
+                                    "晶體外殼",
+                                    "結晶外殻",
+                                    "Origocrust"
+                                ]
+                            }
                         },
                         "SellProductRefugeeCampSellAttempt1SetMissHandler": {
                             "anchor": {
@@ -2537,11 +2693,13 @@
                     "pipeline_override": {
                         "SellProductRefugeeCampSelectItem1": {
                             "enabled": true,
-                            "expected": [
-                                "^紫晶零件$",
-                                "^紫晶部品$",
-                                "^Amethyst Part$"
-                            ]
+                            "custom_recognition_param": {
+                                "candidates": [
+                                    "紫晶零件",
+                                    "紫晶部品",
+                                    "Amethyst Part"
+                                ]
+                            }
                         },
                         "SellProductRefugeeCampSellAttempt1SetMissHandler": {
                             "anchor": {
@@ -2576,12 +2734,14 @@
                     "pipeline_override": {
                         "SellProductRefugeeCampSelectItem2": {
                             "enabled": true,
-                            "expected": [
-                                "^精選蕎癒膠囊$",
-                                "^精选荞愈胶囊$",
-                                "^蕎花カプセルⅢ$",
-                                "^Buck Capsule A$"
-                            ]
+                            "custom_recognition_param": {
+                                "candidates": [
+                                    "精选荞愈胶囊",
+                                    "精選蕎癒膠囊",
+                                    "蕎花カプセルⅢ",
+                                    "Buck Capsule A"
+                                ]
+                            }
                         },
                         "SellProductRefugeeCampSellAttempt2SetMissHandler": {
                             "anchor": {
@@ -2596,12 +2756,14 @@
                     "pipeline_override": {
                         "SellProductRefugeeCampSelectItem2": {
                             "enabled": true,
-                            "expected": [
-                                "^高容量谷地電池$",
-                                "^高容谷地电池$",
-                                "^大容量谷地バッテリー$",
-                                "^HC Valley Battery$"
-                            ]
+                            "custom_recognition_param": {
+                                "candidates": [
+                                    "高容谷地电池",
+                                    "高容量谷地電池",
+                                    "大容量谷地バッテリー",
+                                    "HC Valley Battery"
+                                ]
+                            }
                         },
                         "SellProductRefugeeCampSellAttempt2SetMissHandler": {
                             "anchor": {
@@ -2616,12 +2778,14 @@
                     "pipeline_override": {
                         "SellProductRefugeeCampSelectItem2": {
                             "enabled": true,
-                            "expected": [
-                                "^精選柑實罐頭$",
-                                "^精选柑实罐头$",
-                                "^シトロームの缶詰Ⅲ$",
-                                "^Canned Citrome A$"
-                            ]
+                            "custom_recognition_param": {
+                                "candidates": [
+                                    "精选柑实罐头",
+                                    "精選柑實罐頭",
+                                    "シトロームの缶詰Ⅲ",
+                                    "Canned Citrome A"
+                                ]
+                            }
                         },
                         "SellProductRefugeeCampSellAttempt2SetMissHandler": {
                             "anchor": {
@@ -2636,12 +2800,14 @@
                     "pipeline_override": {
                         "SellProductRefugeeCampSelectItem2": {
                             "enabled": true,
-                            "expected": [
-                                "^中容量谷地電池$",
-                                "^中容谷地电池$",
-                                "^中容量谷地バッテリー$",
-                                "^SC Valley Battery$"
-                            ]
+                            "custom_recognition_param": {
+                                "candidates": [
+                                    "中容谷地电池",
+                                    "中容量谷地電池",
+                                    "中容量谷地バッテリー",
+                                    "SC Valley Battery"
+                                ]
+                            }
                         },
                         "SellProductRefugeeCampSellAttempt2SetMissHandler": {
                             "anchor": {
@@ -2656,12 +2822,14 @@
                     "pipeline_override": {
                         "SellProductRefugeeCampSelectItem2": {
                             "enabled": true,
-                            "expected": [
-                                "^優質蕎癒膠囊$",
-                                "^优质荞愈胶囊$",
-                                "^蕎花カプセルⅡ$",
-                                "^Buck Capsule B$"
-                            ]
+                            "custom_recognition_param": {
+                                "candidates": [
+                                    "优质荞愈胶囊",
+                                    "優質蕎癒膠囊",
+                                    "蕎花カプセルⅡ",
+                                    "Buck Capsule B"
+                                ]
+                            }
                         },
                         "SellProductRefugeeCampSellAttempt2SetMissHandler": {
                             "anchor": {
@@ -2676,12 +2844,14 @@
                     "pipeline_override": {
                         "SellProductRefugeeCampSelectItem2": {
                             "enabled": true,
-                            "expected": [
-                                "^優質柑實罐頭$",
-                                "^优质柑实罐头$",
-                                "^シトロームの缶詰Ⅱ$",
-                                "^Canned Citrome B$"
-                            ]
+                            "custom_recognition_param": {
+                                "candidates": [
+                                    "优质柑实罐头",
+                                    "優質柑實罐頭",
+                                    "シトロームの缶詰Ⅱ",
+                                    "Canned Citrome B"
+                                ]
+                            }
                         },
                         "SellProductRefugeeCampSellAttempt2SetMissHandler": {
                             "anchor": {
@@ -2696,12 +2866,14 @@
                     "pipeline_override": {
                         "SellProductRefugeeCampSelectItem2": {
                             "enabled": true,
-                            "expected": [
-                                "^蕎癒膠囊$",
-                                "^荞愈胶囊$",
-                                "^蕎花カプセルⅠ$",
-                                "^Buck Capsule C$"
-                            ]
+                            "custom_recognition_param": {
+                                "candidates": [
+                                    "荞愈胶囊",
+                                    "蕎癒膠囊",
+                                    "蕎花カプセルⅠ",
+                                    "Buck Capsule C"
+                                ]
+                            }
                         },
                         "SellProductRefugeeCampSellAttempt2SetMissHandler": {
                             "anchor": {
@@ -2716,12 +2888,14 @@
                     "pipeline_override": {
                         "SellProductRefugeeCampSelectItem2": {
                             "enabled": true,
-                            "expected": [
-                                "^柑實罐頭$",
-                                "^柑实罐头$",
-                                "^シトロームの缶詰Ⅰ$",
-                                "^Canned Citrome C$"
-                            ]
+                            "custom_recognition_param": {
+                                "candidates": [
+                                    "柑实罐头",
+                                    "柑實罐頭",
+                                    "シトロームの缶詰Ⅰ",
+                                    "Canned Citrome C"
+                                ]
+                            }
                         },
                         "SellProductRefugeeCampSellAttempt2SetMissHandler": {
                             "anchor": {
@@ -2736,12 +2910,14 @@
                     "pipeline_override": {
                         "SellProductRefugeeCampSelectItem2": {
                             "enabled": true,
-                            "expected": [
-                                "^紫晶質瓶$",
-                                "^紫晶质瓶$",
-                                "^紫晶製ボトル$",
-                                "^Amethyst Bottle$"
-                            ]
+                            "custom_recognition_param": {
+                                "candidates": [
+                                    "紫晶质瓶",
+                                    "紫晶質瓶",
+                                    "紫晶製ボトル",
+                                    "Amethyst Bottle"
+                                ]
+                            }
                         },
                         "SellProductRefugeeCampSellAttempt2SetMissHandler": {
                             "anchor": {
@@ -2756,12 +2932,14 @@
                     "pipeline_override": {
                         "SellProductRefugeeCampSelectItem2": {
                             "enabled": true,
-                            "expected": [
-                                "^晶體外殼$",
-                                "^晶体外壳$",
-                                "^結晶外殻$",
-                                "^Origocrust$"
-                            ]
+                            "custom_recognition_param": {
+                                "candidates": [
+                                    "晶体外壳",
+                                    "晶體外殼",
+                                    "結晶外殻",
+                                    "Origocrust"
+                                ]
+                            }
                         },
                         "SellProductRefugeeCampSellAttempt2SetMissHandler": {
                             "anchor": {
@@ -2776,11 +2954,13 @@
                     "pipeline_override": {
                         "SellProductRefugeeCampSelectItem2": {
                             "enabled": true,
-                            "expected": [
-                                "^紫晶零件$",
-                                "^紫晶部品$",
-                                "^Amethyst Part$"
-                            ]
+                            "custom_recognition_param": {
+                                "candidates": [
+                                    "紫晶零件",
+                                    "紫晶部品",
+                                    "Amethyst Part"
+                                ]
+                            }
                         },
                         "SellProductRefugeeCampSellAttempt2SetMissHandler": {
                             "anchor": {
@@ -2815,12 +2995,14 @@
                     "pipeline_override": {
                         "SellProductRefugeeCampSelectItem3": {
                             "enabled": true,
-                            "expected": [
-                                "^精選蕎癒膠囊$",
-                                "^精选荞愈胶囊$",
-                                "^蕎花カプセルⅢ$",
-                                "^Buck Capsule A$"
-                            ]
+                            "custom_recognition_param": {
+                                "candidates": [
+                                    "精选荞愈胶囊",
+                                    "精選蕎癒膠囊",
+                                    "蕎花カプセルⅢ",
+                                    "Buck Capsule A"
+                                ]
+                            }
                         },
                         "SellProductRefugeeCampSellAttempt3SetMissHandler": {
                             "anchor": {
@@ -2835,12 +3017,14 @@
                     "pipeline_override": {
                         "SellProductRefugeeCampSelectItem3": {
                             "enabled": true,
-                            "expected": [
-                                "^高容量谷地電池$",
-                                "^高容谷地电池$",
-                                "^大容量谷地バッテリー$",
-                                "^HC Valley Battery$"
-                            ]
+                            "custom_recognition_param": {
+                                "candidates": [
+                                    "高容谷地电池",
+                                    "高容量谷地電池",
+                                    "大容量谷地バッテリー",
+                                    "HC Valley Battery"
+                                ]
+                            }
                         },
                         "SellProductRefugeeCampSellAttempt3SetMissHandler": {
                             "anchor": {
@@ -2855,12 +3039,14 @@
                     "pipeline_override": {
                         "SellProductRefugeeCampSelectItem3": {
                             "enabled": true,
-                            "expected": [
-                                "^精選柑實罐頭$",
-                                "^精选柑实罐头$",
-                                "^シトロームの缶詰Ⅲ$",
-                                "^Canned Citrome A$"
-                            ]
+                            "custom_recognition_param": {
+                                "candidates": [
+                                    "精选柑实罐头",
+                                    "精選柑實罐頭",
+                                    "シトロームの缶詰Ⅲ",
+                                    "Canned Citrome A"
+                                ]
+                            }
                         },
                         "SellProductRefugeeCampSellAttempt3SetMissHandler": {
                             "anchor": {
@@ -2875,12 +3061,14 @@
                     "pipeline_override": {
                         "SellProductRefugeeCampSelectItem3": {
                             "enabled": true,
-                            "expected": [
-                                "^中容量谷地電池$",
-                                "^中容谷地电池$",
-                                "^中容量谷地バッテリー$",
-                                "^SC Valley Battery$"
-                            ]
+                            "custom_recognition_param": {
+                                "candidates": [
+                                    "中容谷地电池",
+                                    "中容量谷地電池",
+                                    "中容量谷地バッテリー",
+                                    "SC Valley Battery"
+                                ]
+                            }
                         },
                         "SellProductRefugeeCampSellAttempt3SetMissHandler": {
                             "anchor": {
@@ -2895,12 +3083,14 @@
                     "pipeline_override": {
                         "SellProductRefugeeCampSelectItem3": {
                             "enabled": true,
-                            "expected": [
-                                "^優質蕎癒膠囊$",
-                                "^优质荞愈胶囊$",
-                                "^蕎花カプセルⅡ$",
-                                "^Buck Capsule B$"
-                            ]
+                            "custom_recognition_param": {
+                                "candidates": [
+                                    "优质荞愈胶囊",
+                                    "優質蕎癒膠囊",
+                                    "蕎花カプセルⅡ",
+                                    "Buck Capsule B"
+                                ]
+                            }
                         },
                         "SellProductRefugeeCampSellAttempt3SetMissHandler": {
                             "anchor": {
@@ -2915,12 +3105,14 @@
                     "pipeline_override": {
                         "SellProductRefugeeCampSelectItem3": {
                             "enabled": true,
-                            "expected": [
-                                "^優質柑實罐頭$",
-                                "^优质柑实罐头$",
-                                "^シトロームの缶詰Ⅱ$",
-                                "^Canned Citrome B$"
-                            ]
+                            "custom_recognition_param": {
+                                "candidates": [
+                                    "优质柑实罐头",
+                                    "優質柑實罐頭",
+                                    "シトロームの缶詰Ⅱ",
+                                    "Canned Citrome B"
+                                ]
+                            }
                         },
                         "SellProductRefugeeCampSellAttempt3SetMissHandler": {
                             "anchor": {
@@ -2935,12 +3127,14 @@
                     "pipeline_override": {
                         "SellProductRefugeeCampSelectItem3": {
                             "enabled": true,
-                            "expected": [
-                                "^蕎癒膠囊$",
-                                "^荞愈胶囊$",
-                                "^蕎花カプセルⅠ$",
-                                "^Buck Capsule C$"
-                            ]
+                            "custom_recognition_param": {
+                                "candidates": [
+                                    "荞愈胶囊",
+                                    "蕎癒膠囊",
+                                    "蕎花カプセルⅠ",
+                                    "Buck Capsule C"
+                                ]
+                            }
                         },
                         "SellProductRefugeeCampSellAttempt3SetMissHandler": {
                             "anchor": {
@@ -2955,12 +3149,14 @@
                     "pipeline_override": {
                         "SellProductRefugeeCampSelectItem3": {
                             "enabled": true,
-                            "expected": [
-                                "^柑實罐頭$",
-                                "^柑实罐头$",
-                                "^シトロームの缶詰Ⅰ$",
-                                "^Canned Citrome C$"
-                            ]
+                            "custom_recognition_param": {
+                                "candidates": [
+                                    "柑实罐头",
+                                    "柑實罐頭",
+                                    "シトロームの缶詰Ⅰ",
+                                    "Canned Citrome C"
+                                ]
+                            }
                         },
                         "SellProductRefugeeCampSellAttempt3SetMissHandler": {
                             "anchor": {
@@ -2975,12 +3171,14 @@
                     "pipeline_override": {
                         "SellProductRefugeeCampSelectItem3": {
                             "enabled": true,
-                            "expected": [
-                                "^紫晶質瓶$",
-                                "^紫晶质瓶$",
-                                "^紫晶製ボトル$",
-                                "^Amethyst Bottle$"
-                            ]
+                            "custom_recognition_param": {
+                                "candidates": [
+                                    "紫晶质瓶",
+                                    "紫晶質瓶",
+                                    "紫晶製ボトル",
+                                    "Amethyst Bottle"
+                                ]
+                            }
                         },
                         "SellProductRefugeeCampSellAttempt3SetMissHandler": {
                             "anchor": {
@@ -2995,12 +3193,14 @@
                     "pipeline_override": {
                         "SellProductRefugeeCampSelectItem3": {
                             "enabled": true,
-                            "expected": [
-                                "^晶體外殼$",
-                                "^晶体外壳$",
-                                "^結晶外殻$",
-                                "^Origocrust$"
-                            ]
+                            "custom_recognition_param": {
+                                "candidates": [
+                                    "晶体外壳",
+                                    "晶體外殼",
+                                    "結晶外殻",
+                                    "Origocrust"
+                                ]
+                            }
                         },
                         "SellProductRefugeeCampSellAttempt3SetMissHandler": {
                             "anchor": {
@@ -3015,11 +3215,13 @@
                     "pipeline_override": {
                         "SellProductRefugeeCampSelectItem3": {
                             "enabled": true,
-                            "expected": [
-                                "^紫晶零件$",
-                                "^紫晶部品$",
-                                "^Amethyst Part$"
-                            ]
+                            "custom_recognition_param": {
+                                "candidates": [
+                                    "紫晶零件",
+                                    "紫晶部品",
+                                    "Amethyst Part"
+                                ]
+                            }
                         },
                         "SellProductRefugeeCampSellAttempt3SetMissHandler": {
                             "anchor": {
@@ -3054,12 +3256,14 @@
                     "pipeline_override": {
                         "SellProductRefugeeCampSelectItem4": {
                             "enabled": true,
-                            "expected": [
-                                "^精選蕎癒膠囊$",
-                                "^精选荞愈胶囊$",
-                                "^蕎花カプセルⅢ$",
-                                "^Buck Capsule A$"
-                            ]
+                            "custom_recognition_param": {
+                                "candidates": [
+                                    "精选荞愈胶囊",
+                                    "精選蕎癒膠囊",
+                                    "蕎花カプセルⅢ",
+                                    "Buck Capsule A"
+                                ]
+                            }
                         },
                         "SellProductRefugeeCampSellAttempt4SetMissHandler": {
                             "anchor": {
@@ -3074,12 +3278,14 @@
                     "pipeline_override": {
                         "SellProductRefugeeCampSelectItem4": {
                             "enabled": true,
-                            "expected": [
-                                "^高容量谷地電池$",
-                                "^高容谷地电池$",
-                                "^大容量谷地バッテリー$",
-                                "^HC Valley Battery$"
-                            ]
+                            "custom_recognition_param": {
+                                "candidates": [
+                                    "高容谷地电池",
+                                    "高容量谷地電池",
+                                    "大容量谷地バッテリー",
+                                    "HC Valley Battery"
+                                ]
+                            }
                         },
                         "SellProductRefugeeCampSellAttempt4SetMissHandler": {
                             "anchor": {
@@ -3094,12 +3300,14 @@
                     "pipeline_override": {
                         "SellProductRefugeeCampSelectItem4": {
                             "enabled": true,
-                            "expected": [
-                                "^精選柑實罐頭$",
-                                "^精选柑实罐头$",
-                                "^シトロームの缶詰Ⅲ$",
-                                "^Canned Citrome A$"
-                            ]
+                            "custom_recognition_param": {
+                                "candidates": [
+                                    "精选柑实罐头",
+                                    "精選柑實罐頭",
+                                    "シトロームの缶詰Ⅲ",
+                                    "Canned Citrome A"
+                                ]
+                            }
                         },
                         "SellProductRefugeeCampSellAttempt4SetMissHandler": {
                             "anchor": {
@@ -3114,12 +3322,14 @@
                     "pipeline_override": {
                         "SellProductRefugeeCampSelectItem4": {
                             "enabled": true,
-                            "expected": [
-                                "^中容量谷地電池$",
-                                "^中容谷地电池$",
-                                "^中容量谷地バッテリー$",
-                                "^SC Valley Battery$"
-                            ]
+                            "custom_recognition_param": {
+                                "candidates": [
+                                    "中容谷地电池",
+                                    "中容量谷地電池",
+                                    "中容量谷地バッテリー",
+                                    "SC Valley Battery"
+                                ]
+                            }
                         },
                         "SellProductRefugeeCampSellAttempt4SetMissHandler": {
                             "anchor": {
@@ -3134,12 +3344,14 @@
                     "pipeline_override": {
                         "SellProductRefugeeCampSelectItem4": {
                             "enabled": true,
-                            "expected": [
-                                "^優質蕎癒膠囊$",
-                                "^优质荞愈胶囊$",
-                                "^蕎花カプセルⅡ$",
-                                "^Buck Capsule B$"
-                            ]
+                            "custom_recognition_param": {
+                                "candidates": [
+                                    "优质荞愈胶囊",
+                                    "優質蕎癒膠囊",
+                                    "蕎花カプセルⅡ",
+                                    "Buck Capsule B"
+                                ]
+                            }
                         },
                         "SellProductRefugeeCampSellAttempt4SetMissHandler": {
                             "anchor": {
@@ -3154,12 +3366,14 @@
                     "pipeline_override": {
                         "SellProductRefugeeCampSelectItem4": {
                             "enabled": true,
-                            "expected": [
-                                "^優質柑實罐頭$",
-                                "^优质柑实罐头$",
-                                "^シトロームの缶詰Ⅱ$",
-                                "^Canned Citrome B$"
-                            ]
+                            "custom_recognition_param": {
+                                "candidates": [
+                                    "优质柑实罐头",
+                                    "優質柑實罐頭",
+                                    "シトロームの缶詰Ⅱ",
+                                    "Canned Citrome B"
+                                ]
+                            }
                         },
                         "SellProductRefugeeCampSellAttempt4SetMissHandler": {
                             "anchor": {
@@ -3174,12 +3388,14 @@
                     "pipeline_override": {
                         "SellProductRefugeeCampSelectItem4": {
                             "enabled": true,
-                            "expected": [
-                                "^蕎癒膠囊$",
-                                "^荞愈胶囊$",
-                                "^蕎花カプセルⅠ$",
-                                "^Buck Capsule C$"
-                            ]
+                            "custom_recognition_param": {
+                                "candidates": [
+                                    "荞愈胶囊",
+                                    "蕎癒膠囊",
+                                    "蕎花カプセルⅠ",
+                                    "Buck Capsule C"
+                                ]
+                            }
                         },
                         "SellProductRefugeeCampSellAttempt4SetMissHandler": {
                             "anchor": {
@@ -3194,12 +3410,14 @@
                     "pipeline_override": {
                         "SellProductRefugeeCampSelectItem4": {
                             "enabled": true,
-                            "expected": [
-                                "^柑實罐頭$",
-                                "^柑实罐头$",
-                                "^シトロームの缶詰Ⅰ$",
-                                "^Canned Citrome C$"
-                            ]
+                            "custom_recognition_param": {
+                                "candidates": [
+                                    "柑实罐头",
+                                    "柑實罐頭",
+                                    "シトロームの缶詰Ⅰ",
+                                    "Canned Citrome C"
+                                ]
+                            }
                         },
                         "SellProductRefugeeCampSellAttempt4SetMissHandler": {
                             "anchor": {
@@ -3214,12 +3432,14 @@
                     "pipeline_override": {
                         "SellProductRefugeeCampSelectItem4": {
                             "enabled": true,
-                            "expected": [
-                                "^紫晶質瓶$",
-                                "^紫晶质瓶$",
-                                "^紫晶製ボトル$",
-                                "^Amethyst Bottle$"
-                            ]
+                            "custom_recognition_param": {
+                                "candidates": [
+                                    "紫晶质瓶",
+                                    "紫晶質瓶",
+                                    "紫晶製ボトル",
+                                    "Amethyst Bottle"
+                                ]
+                            }
                         },
                         "SellProductRefugeeCampSellAttempt4SetMissHandler": {
                             "anchor": {
@@ -3234,12 +3454,14 @@
                     "pipeline_override": {
                         "SellProductRefugeeCampSelectItem4": {
                             "enabled": true,
-                            "expected": [
-                                "^晶體外殼$",
-                                "^晶体外壳$",
-                                "^結晶外殻$",
-                                "^Origocrust$"
-                            ]
+                            "custom_recognition_param": {
+                                "candidates": [
+                                    "晶体外壳",
+                                    "晶體外殼",
+                                    "結晶外殻",
+                                    "Origocrust"
+                                ]
+                            }
                         },
                         "SellProductRefugeeCampSellAttempt4SetMissHandler": {
                             "anchor": {
@@ -3254,11 +3476,13 @@
                     "pipeline_override": {
                         "SellProductRefugeeCampSelectItem4": {
                             "enabled": true,
-                            "expected": [
-                                "^紫晶零件$",
-                                "^紫晶部品$",
-                                "^Amethyst Part$"
-                            ]
+                            "custom_recognition_param": {
+                                "candidates": [
+                                    "紫晶零件",
+                                    "紫晶部品",
+                                    "Amethyst Part"
+                                ]
+                            }
                         },
                         "SellProductRefugeeCampSellAttempt4SetMissHandler": {
                             "anchor": {
@@ -3627,12 +3851,14 @@
                     "pipeline_override": {
                         "SellProductCardiacRemediationStationSelectItem1": {
                             "enabled": true,
-                            "expected": [
-                                "^息壤玉葫蘆$",
-                                "^息壤玉葫芦$",
-                                "^息壌玉ひょうたん$",
-                                "^Xiranite Jade Gourd$"
-                            ]
+                            "custom_recognition_param": {
+                                "candidates": [
+                                    "息壤玉葫芦",
+                                    "息壤玉葫蘆",
+                                    "息壌玉ひょうたん",
+                                    "Xiranite Jade Gourd"
+                                ]
+                            }
                         },
                         "SellProductCardiacRemediationStationSellAttempt1SetMissHandler": {
                             "anchor": {
@@ -3647,12 +3873,14 @@
                     "pipeline_override": {
                         "SellProductCardiacRemediationStationSelectItem1": {
                             "enabled": true,
-                            "expected": [
-                                "^中容量武陵電池$",
-                                "^中容武陵电池$",
-                                "^中容量武陵バッテリー$",
-                                "^SC Wuling Battery$"
-                            ]
+                            "custom_recognition_param": {
+                                "candidates": [
+                                    "中容武陵电池",
+                                    "中容量武陵電池",
+                                    "中容量武陵バッテリー",
+                                    "SC Wuling Battery"
+                                ]
+                            }
                         },
                         "SellProductCardiacRemediationStationSellAttempt1SetMissHandler": {
                             "anchor": {
@@ -3667,12 +3895,14 @@
                     "pipeline_override": {
                         "SellProductCardiacRemediationStationSelectItem1": {
                             "enabled": true,
-                            "expected": [
-                                "^息壤葫蘆$",
-                                "^息壤葫芦$",
-                                "^息壌ひょうたん$",
-                                "^Xiranite Gourd$"
-                            ]
+                            "custom_recognition_param": {
+                                "candidates": [
+                                    "息壤葫芦",
+                                    "息壤葫蘆",
+                                    "息壌ひょうたん",
+                                    "Xiranite Gourd"
+                                ]
+                            }
                         },
                         "SellProductCardiacRemediationStationSellAttempt1SetMissHandler": {
                             "anchor": {
@@ -3687,12 +3917,14 @@
                     "pipeline_override": {
                         "SellProductCardiacRemediationStationSelectItem1": {
                             "enabled": true,
-                            "expected": [
-                                "^低容量武陵電池$",
-                                "^低容武陵电池$",
-                                "^小容量武陵バッテリー$",
-                                "^LC Wuling Battery$"
-                            ]
+                            "custom_recognition_param": {
+                                "candidates": [
+                                    "低容武陵电池",
+                                    "低容量武陵電池",
+                                    "小容量武陵バッテリー",
+                                    "LC Wuling Battery"
+                                ]
+                            }
                         },
                         "SellProductCardiacRemediationStationSellAttempt1SetMissHandler": {
                             "anchor": {
@@ -3707,12 +3939,14 @@
                     "pipeline_override": {
                         "SellProductCardiacRemediationStationSelectItem1": {
                             "enabled": true,
-                            "expected": [
-                                "^優質錦草飲料$",
-                                "^优质锦草软饮$",
-                                "^錦草ソーダⅡ$",
-                                "^Jincao Tea$"
-                            ]
+                            "custom_recognition_param": {
+                                "candidates": [
+                                    "优质锦草软饮",
+                                    "優質錦草飲料",
+                                    "錦草ソーダⅡ",
+                                    "Jincao Tea"
+                                ]
+                            }
                         },
                         "SellProductCardiacRemediationStationSellAttempt1SetMissHandler": {
                             "anchor": {
@@ -3727,12 +3961,14 @@
                     "pipeline_override": {
                         "SellProductCardiacRemediationStationSelectItem1": {
                             "enabled": true,
-                            "expected": [
-                                "^優質芽針針劑$",
-                                "^优质芽针针剂$",
-                                "^芽針注射剤Ⅱ$",
-                                "^Yazhen Syringe A$"
-                            ]
+                            "custom_recognition_param": {
+                                "candidates": [
+                                    "优质芽针针剂",
+                                    "優質芽針針劑",
+                                    "芽針注射剤Ⅱ",
+                                    "Yazhen Syringe A"
+                                ]
+                            }
                         },
                         "SellProductCardiacRemediationStationSellAttempt1SetMissHandler": {
                             "anchor": {
@@ -3747,11 +3983,13 @@
                     "pipeline_override": {
                         "SellProductCardiacRemediationStationSelectItem1": {
                             "enabled": true,
-                            "expected": [
-                                "^重息壤$",
-                                "^重息壌$",
-                                "^Heavy Xiranite$"
-                            ]
+                            "custom_recognition_param": {
+                                "candidates": [
+                                    "重息壤",
+                                    "重息壌",
+                                    "Heavy Xiranite"
+                                ]
+                            }
                         },
                         "SellProductCardiacRemediationStationSellAttempt1SetMissHandler": {
                             "anchor": {
@@ -3766,11 +4004,13 @@
                     "pipeline_override": {
                         "SellProductCardiacRemediationStationSelectItem1": {
                             "enabled": true,
-                            "expected": [
-                                "^息壤$",
-                                "^息壌$",
-                                "^Xiranite$"
-                            ]
+                            "custom_recognition_param": {
+                                "candidates": [
+                                    "息壤",
+                                    "息壌",
+                                    "Xiranite"
+                                ]
+                            }
                         },
                         "SellProductCardiacRemediationStationSellAttempt1SetMissHandler": {
                             "anchor": {
@@ -3805,12 +4045,14 @@
                     "pipeline_override": {
                         "SellProductCardiacRemediationStationSelectItem2": {
                             "enabled": true,
-                            "expected": [
-                                "^息壤玉葫蘆$",
-                                "^息壤玉葫芦$",
-                                "^息壌玉ひょうたん$",
-                                "^Xiranite Jade Gourd$"
-                            ]
+                            "custom_recognition_param": {
+                                "candidates": [
+                                    "息壤玉葫芦",
+                                    "息壤玉葫蘆",
+                                    "息壌玉ひょうたん",
+                                    "Xiranite Jade Gourd"
+                                ]
+                            }
                         },
                         "SellProductCardiacRemediationStationSellAttempt2SetMissHandler": {
                             "anchor": {
@@ -3825,12 +4067,14 @@
                     "pipeline_override": {
                         "SellProductCardiacRemediationStationSelectItem2": {
                             "enabled": true,
-                            "expected": [
-                                "^中容量武陵電池$",
-                                "^中容武陵电池$",
-                                "^中容量武陵バッテリー$",
-                                "^SC Wuling Battery$"
-                            ]
+                            "custom_recognition_param": {
+                                "candidates": [
+                                    "中容武陵电池",
+                                    "中容量武陵電池",
+                                    "中容量武陵バッテリー",
+                                    "SC Wuling Battery"
+                                ]
+                            }
                         },
                         "SellProductCardiacRemediationStationSellAttempt2SetMissHandler": {
                             "anchor": {
@@ -3845,12 +4089,14 @@
                     "pipeline_override": {
                         "SellProductCardiacRemediationStationSelectItem2": {
                             "enabled": true,
-                            "expected": [
-                                "^息壤葫蘆$",
-                                "^息壤葫芦$",
-                                "^息壌ひょうたん$",
-                                "^Xiranite Gourd$"
-                            ]
+                            "custom_recognition_param": {
+                                "candidates": [
+                                    "息壤葫芦",
+                                    "息壤葫蘆",
+                                    "息壌ひょうたん",
+                                    "Xiranite Gourd"
+                                ]
+                            }
                         },
                         "SellProductCardiacRemediationStationSellAttempt2SetMissHandler": {
                             "anchor": {
@@ -3865,12 +4111,14 @@
                     "pipeline_override": {
                         "SellProductCardiacRemediationStationSelectItem2": {
                             "enabled": true,
-                            "expected": [
-                                "^低容量武陵電池$",
-                                "^低容武陵电池$",
-                                "^小容量武陵バッテリー$",
-                                "^LC Wuling Battery$"
-                            ]
+                            "custom_recognition_param": {
+                                "candidates": [
+                                    "低容武陵电池",
+                                    "低容量武陵電池",
+                                    "小容量武陵バッテリー",
+                                    "LC Wuling Battery"
+                                ]
+                            }
                         },
                         "SellProductCardiacRemediationStationSellAttempt2SetMissHandler": {
                             "anchor": {
@@ -3885,12 +4133,14 @@
                     "pipeline_override": {
                         "SellProductCardiacRemediationStationSelectItem2": {
                             "enabled": true,
-                            "expected": [
-                                "^優質錦草飲料$",
-                                "^优质锦草软饮$",
-                                "^錦草ソーダⅡ$",
-                                "^Jincao Tea$"
-                            ]
+                            "custom_recognition_param": {
+                                "candidates": [
+                                    "优质锦草软饮",
+                                    "優質錦草飲料",
+                                    "錦草ソーダⅡ",
+                                    "Jincao Tea"
+                                ]
+                            }
                         },
                         "SellProductCardiacRemediationStationSellAttempt2SetMissHandler": {
                             "anchor": {
@@ -3905,12 +4155,14 @@
                     "pipeline_override": {
                         "SellProductCardiacRemediationStationSelectItem2": {
                             "enabled": true,
-                            "expected": [
-                                "^優質芽針針劑$",
-                                "^优质芽针针剂$",
-                                "^芽針注射剤Ⅱ$",
-                                "^Yazhen Syringe A$"
-                            ]
+                            "custom_recognition_param": {
+                                "candidates": [
+                                    "优质芽针针剂",
+                                    "優質芽針針劑",
+                                    "芽針注射剤Ⅱ",
+                                    "Yazhen Syringe A"
+                                ]
+                            }
                         },
                         "SellProductCardiacRemediationStationSellAttempt2SetMissHandler": {
                             "anchor": {
@@ -3925,11 +4177,13 @@
                     "pipeline_override": {
                         "SellProductCardiacRemediationStationSelectItem2": {
                             "enabled": true,
-                            "expected": [
-                                "^重息壤$",
-                                "^重息壌$",
-                                "^Heavy Xiranite$"
-                            ]
+                            "custom_recognition_param": {
+                                "candidates": [
+                                    "重息壤",
+                                    "重息壌",
+                                    "Heavy Xiranite"
+                                ]
+                            }
                         },
                         "SellProductCardiacRemediationStationSellAttempt2SetMissHandler": {
                             "anchor": {
@@ -3944,11 +4198,13 @@
                     "pipeline_override": {
                         "SellProductCardiacRemediationStationSelectItem2": {
                             "enabled": true,
-                            "expected": [
-                                "^息壤$",
-                                "^息壌$",
-                                "^Xiranite$"
-                            ]
+                            "custom_recognition_param": {
+                                "candidates": [
+                                    "息壤",
+                                    "息壌",
+                                    "Xiranite"
+                                ]
+                            }
                         },
                         "SellProductCardiacRemediationStationSellAttempt2SetMissHandler": {
                             "anchor": {
@@ -3983,12 +4239,14 @@
                     "pipeline_override": {
                         "SellProductCardiacRemediationStationSelectItem3": {
                             "enabled": true,
-                            "expected": [
-                                "^息壤玉葫蘆$",
-                                "^息壤玉葫芦$",
-                                "^息壌玉ひょうたん$",
-                                "^Xiranite Jade Gourd$"
-                            ]
+                            "custom_recognition_param": {
+                                "candidates": [
+                                    "息壤玉葫芦",
+                                    "息壤玉葫蘆",
+                                    "息壌玉ひょうたん",
+                                    "Xiranite Jade Gourd"
+                                ]
+                            }
                         },
                         "SellProductCardiacRemediationStationSellAttempt3SetMissHandler": {
                             "anchor": {
@@ -4003,12 +4261,14 @@
                     "pipeline_override": {
                         "SellProductCardiacRemediationStationSelectItem3": {
                             "enabled": true,
-                            "expected": [
-                                "^中容量武陵電池$",
-                                "^中容武陵电池$",
-                                "^中容量武陵バッテリー$",
-                                "^SC Wuling Battery$"
-                            ]
+                            "custom_recognition_param": {
+                                "candidates": [
+                                    "中容武陵电池",
+                                    "中容量武陵電池",
+                                    "中容量武陵バッテリー",
+                                    "SC Wuling Battery"
+                                ]
+                            }
                         },
                         "SellProductCardiacRemediationStationSellAttempt3SetMissHandler": {
                             "anchor": {
@@ -4023,12 +4283,14 @@
                     "pipeline_override": {
                         "SellProductCardiacRemediationStationSelectItem3": {
                             "enabled": true,
-                            "expected": [
-                                "^息壤葫蘆$",
-                                "^息壤葫芦$",
-                                "^息壌ひょうたん$",
-                                "^Xiranite Gourd$"
-                            ]
+                            "custom_recognition_param": {
+                                "candidates": [
+                                    "息壤葫芦",
+                                    "息壤葫蘆",
+                                    "息壌ひょうたん",
+                                    "Xiranite Gourd"
+                                ]
+                            }
                         },
                         "SellProductCardiacRemediationStationSellAttempt3SetMissHandler": {
                             "anchor": {
@@ -4043,12 +4305,14 @@
                     "pipeline_override": {
                         "SellProductCardiacRemediationStationSelectItem3": {
                             "enabled": true,
-                            "expected": [
-                                "^低容量武陵電池$",
-                                "^低容武陵电池$",
-                                "^小容量武陵バッテリー$",
-                                "^LC Wuling Battery$"
-                            ]
+                            "custom_recognition_param": {
+                                "candidates": [
+                                    "低容武陵电池",
+                                    "低容量武陵電池",
+                                    "小容量武陵バッテリー",
+                                    "LC Wuling Battery"
+                                ]
+                            }
                         },
                         "SellProductCardiacRemediationStationSellAttempt3SetMissHandler": {
                             "anchor": {
@@ -4063,12 +4327,14 @@
                     "pipeline_override": {
                         "SellProductCardiacRemediationStationSelectItem3": {
                             "enabled": true,
-                            "expected": [
-                                "^優質錦草飲料$",
-                                "^优质锦草软饮$",
-                                "^錦草ソーダⅡ$",
-                                "^Jincao Tea$"
-                            ]
+                            "custom_recognition_param": {
+                                "candidates": [
+                                    "优质锦草软饮",
+                                    "優質錦草飲料",
+                                    "錦草ソーダⅡ",
+                                    "Jincao Tea"
+                                ]
+                            }
                         },
                         "SellProductCardiacRemediationStationSellAttempt3SetMissHandler": {
                             "anchor": {
@@ -4083,12 +4349,14 @@
                     "pipeline_override": {
                         "SellProductCardiacRemediationStationSelectItem3": {
                             "enabled": true,
-                            "expected": [
-                                "^優質芽針針劑$",
-                                "^优质芽针针剂$",
-                                "^芽針注射剤Ⅱ$",
-                                "^Yazhen Syringe A$"
-                            ]
+                            "custom_recognition_param": {
+                                "candidates": [
+                                    "优质芽针针剂",
+                                    "優質芽針針劑",
+                                    "芽針注射剤Ⅱ",
+                                    "Yazhen Syringe A"
+                                ]
+                            }
                         },
                         "SellProductCardiacRemediationStationSellAttempt3SetMissHandler": {
                             "anchor": {
@@ -4103,11 +4371,13 @@
                     "pipeline_override": {
                         "SellProductCardiacRemediationStationSelectItem3": {
                             "enabled": true,
-                            "expected": [
-                                "^重息壤$",
-                                "^重息壌$",
-                                "^Heavy Xiranite$"
-                            ]
+                            "custom_recognition_param": {
+                                "candidates": [
+                                    "重息壤",
+                                    "重息壌",
+                                    "Heavy Xiranite"
+                                ]
+                            }
                         },
                         "SellProductCardiacRemediationStationSellAttempt3SetMissHandler": {
                             "anchor": {
@@ -4122,11 +4392,13 @@
                     "pipeline_override": {
                         "SellProductCardiacRemediationStationSelectItem3": {
                             "enabled": true,
-                            "expected": [
-                                "^息壤$",
-                                "^息壌$",
-                                "^Xiranite$"
-                            ]
+                            "custom_recognition_param": {
+                                "candidates": [
+                                    "息壤",
+                                    "息壌",
+                                    "Xiranite"
+                                ]
+                            }
                         },
                         "SellProductCardiacRemediationStationSellAttempt3SetMissHandler": {
                             "anchor": {
@@ -4161,12 +4433,14 @@
                     "pipeline_override": {
                         "SellProductCardiacRemediationStationSelectItem4": {
                             "enabled": true,
-                            "expected": [
-                                "^息壤玉葫蘆$",
-                                "^息壤玉葫芦$",
-                                "^息壌玉ひょうたん$",
-                                "^Xiranite Jade Gourd$"
-                            ]
+                            "custom_recognition_param": {
+                                "candidates": [
+                                    "息壤玉葫芦",
+                                    "息壤玉葫蘆",
+                                    "息壌玉ひょうたん",
+                                    "Xiranite Jade Gourd"
+                                ]
+                            }
                         },
                         "SellProductCardiacRemediationStationSellAttempt4SetMissHandler": {
                             "anchor": {
@@ -4181,12 +4455,14 @@
                     "pipeline_override": {
                         "SellProductCardiacRemediationStationSelectItem4": {
                             "enabled": true,
-                            "expected": [
-                                "^中容量武陵電池$",
-                                "^中容武陵电池$",
-                                "^中容量武陵バッテリー$",
-                                "^SC Wuling Battery$"
-                            ]
+                            "custom_recognition_param": {
+                                "candidates": [
+                                    "中容武陵电池",
+                                    "中容量武陵電池",
+                                    "中容量武陵バッテリー",
+                                    "SC Wuling Battery"
+                                ]
+                            }
                         },
                         "SellProductCardiacRemediationStationSellAttempt4SetMissHandler": {
                             "anchor": {
@@ -4201,12 +4477,14 @@
                     "pipeline_override": {
                         "SellProductCardiacRemediationStationSelectItem4": {
                             "enabled": true,
-                            "expected": [
-                                "^息壤葫蘆$",
-                                "^息壤葫芦$",
-                                "^息壌ひょうたん$",
-                                "^Xiranite Gourd$"
-                            ]
+                            "custom_recognition_param": {
+                                "candidates": [
+                                    "息壤葫芦",
+                                    "息壤葫蘆",
+                                    "息壌ひょうたん",
+                                    "Xiranite Gourd"
+                                ]
+                            }
                         },
                         "SellProductCardiacRemediationStationSellAttempt4SetMissHandler": {
                             "anchor": {
@@ -4221,12 +4499,14 @@
                     "pipeline_override": {
                         "SellProductCardiacRemediationStationSelectItem4": {
                             "enabled": true,
-                            "expected": [
-                                "^低容量武陵電池$",
-                                "^低容武陵电池$",
-                                "^小容量武陵バッテリー$",
-                                "^LC Wuling Battery$"
-                            ]
+                            "custom_recognition_param": {
+                                "candidates": [
+                                    "低容武陵电池",
+                                    "低容量武陵電池",
+                                    "小容量武陵バッテリー",
+                                    "LC Wuling Battery"
+                                ]
+                            }
                         },
                         "SellProductCardiacRemediationStationSellAttempt4SetMissHandler": {
                             "anchor": {
@@ -4241,12 +4521,14 @@
                     "pipeline_override": {
                         "SellProductCardiacRemediationStationSelectItem4": {
                             "enabled": true,
-                            "expected": [
-                                "^優質錦草飲料$",
-                                "^优质锦草软饮$",
-                                "^錦草ソーダⅡ$",
-                                "^Jincao Tea$"
-                            ]
+                            "custom_recognition_param": {
+                                "candidates": [
+                                    "优质锦草软饮",
+                                    "優質錦草飲料",
+                                    "錦草ソーダⅡ",
+                                    "Jincao Tea"
+                                ]
+                            }
                         },
                         "SellProductCardiacRemediationStationSellAttempt4SetMissHandler": {
                             "anchor": {
@@ -4261,12 +4543,14 @@
                     "pipeline_override": {
                         "SellProductCardiacRemediationStationSelectItem4": {
                             "enabled": true,
-                            "expected": [
-                                "^優質芽針針劑$",
-                                "^优质芽针针剂$",
-                                "^芽針注射剤Ⅱ$",
-                                "^Yazhen Syringe A$"
-                            ]
+                            "custom_recognition_param": {
+                                "candidates": [
+                                    "优质芽针针剂",
+                                    "優質芽針針劑",
+                                    "芽針注射剤Ⅱ",
+                                    "Yazhen Syringe A"
+                                ]
+                            }
                         },
                         "SellProductCardiacRemediationStationSellAttempt4SetMissHandler": {
                             "anchor": {
@@ -4281,11 +4565,13 @@
                     "pipeline_override": {
                         "SellProductCardiacRemediationStationSelectItem4": {
                             "enabled": true,
-                            "expected": [
-                                "^重息壤$",
-                                "^重息壌$",
-                                "^Heavy Xiranite$"
-                            ]
+                            "custom_recognition_param": {
+                                "candidates": [
+                                    "重息壤",
+                                    "重息壌",
+                                    "Heavy Xiranite"
+                                ]
+                            }
                         },
                         "SellProductCardiacRemediationStationSellAttempt4SetMissHandler": {
                             "anchor": {
@@ -4300,11 +4586,13 @@
                     "pipeline_override": {
                         "SellProductCardiacRemediationStationSelectItem4": {
                             "enabled": true,
-                            "expected": [
-                                "^息壤$",
-                                "^息壌$",
-                                "^Xiranite$"
-                            ]
+                            "custom_recognition_param": {
+                                "candidates": [
+                                    "息壤",
+                                    "息壌",
+                                    "Xiranite"
+                                ]
+                            }
                         },
                         "SellProductCardiacRemediationStationSellAttempt4SetMissHandler": {
                             "anchor": {
@@ -4645,12 +4933,14 @@
                     "pipeline_override": {
                         "SellProductSkyKingFlatsSelectItem1": {
                             "enabled": true,
-                            "expected": [
-                                "^息壤玉葫蘆$",
-                                "^息壤玉葫芦$",
-                                "^息壌玉ひょうたん$",
-                                "^Xiranite Jade Gourd$"
-                            ]
+                            "custom_recognition_param": {
+                                "candidates": [
+                                    "息壤玉葫芦",
+                                    "息壤玉葫蘆",
+                                    "息壌玉ひょうたん",
+                                    "Xiranite Jade Gourd"
+                                ]
+                            }
                         },
                         "SellProductSkyKingFlatsSellAttempt1SetMissHandler": {
                             "anchor": {
@@ -4665,12 +4955,14 @@
                     "pipeline_override": {
                         "SellProductSkyKingFlatsSelectItem1": {
                             "enabled": true,
-                            "expected": [
-                                "^中容量武陵電池$",
-                                "^中容武陵电池$",
-                                "^中容量武陵バッテリー$",
-                                "^SC Wuling Battery$"
-                            ]
+                            "custom_recognition_param": {
+                                "candidates": [
+                                    "中容武陵电池",
+                                    "中容量武陵電池",
+                                    "中容量武陵バッテリー",
+                                    "SC Wuling Battery"
+                                ]
+                            }
                         },
                         "SellProductSkyKingFlatsSellAttempt1SetMissHandler": {
                             "anchor": {
@@ -4685,12 +4977,14 @@
                     "pipeline_override": {
                         "SellProductSkyKingFlatsSelectItem1": {
                             "enabled": true,
-                            "expected": [
-                                "^赫銅零件$",
-                                "^赫铜零件$",
-                                "^緋銅部品$",
-                                "^Hetonite Part$"
-                            ]
+                            "custom_recognition_param": {
+                                "candidates": [
+                                    "赫铜零件",
+                                    "赫銅零件",
+                                    "緋銅部品",
+                                    "Hetonite Part"
+                                ]
+                            }
                         },
                         "SellProductSkyKingFlatsSellAttempt1SetMissHandler": {
                             "anchor": {
@@ -4705,12 +4999,14 @@
                     "pipeline_override": {
                         "SellProductSkyKingFlatsSelectItem1": {
                             "enabled": true,
-                            "expected": [
-                                "^息壤葫蘆$",
-                                "^息壤葫芦$",
-                                "^息壌ひょうたん$",
-                                "^Xiranite Gourd$"
-                            ]
+                            "custom_recognition_param": {
+                                "candidates": [
+                                    "息壤葫芦",
+                                    "息壤葫蘆",
+                                    "息壌ひょうたん",
+                                    "Xiranite Gourd"
+                                ]
+                            }
                         },
                         "SellProductSkyKingFlatsSellAttempt1SetMissHandler": {
                             "anchor": {
@@ -4725,12 +5021,14 @@
                     "pipeline_override": {
                         "SellProductSkyKingFlatsSelectItem1": {
                             "enabled": true,
-                            "expected": [
-                                "^低容量武陵電池$",
-                                "^低容武陵电池$",
-                                "^小容量武陵バッテリー$",
-                                "^LC Wuling Battery$"
-                            ]
+                            "custom_recognition_param": {
+                                "candidates": [
+                                    "低容武陵电池",
+                                    "低容量武陵電池",
+                                    "小容量武陵バッテリー",
+                                    "LC Wuling Battery"
+                                ]
+                            }
                         },
                         "SellProductSkyKingFlatsSellAttempt1SetMissHandler": {
                             "anchor": {
@@ -4745,12 +5043,14 @@
                     "pipeline_override": {
                         "SellProductSkyKingFlatsSelectItem1": {
                             "enabled": true,
-                            "expected": [
-                                "^優質芽針針劑$",
-                                "^优质芽针针剂$",
-                                "^芽針注射剤Ⅱ$",
-                                "^Yazhen Syringe A$"
-                            ]
+                            "custom_recognition_param": {
+                                "candidates": [
+                                    "优质芽针针剂",
+                                    "優質芽針針劑",
+                                    "芽針注射剤Ⅱ",
+                                    "Yazhen Syringe A"
+                                ]
+                            }
                         },
                         "SellProductSkyKingFlatsSellAttempt1SetMissHandler": {
                             "anchor": {
@@ -4765,12 +5065,14 @@
                     "pipeline_override": {
                         "SellProductSkyKingFlatsSelectItem1": {
                             "enabled": true,
-                            "expected": [
-                                "^芽針針劑$",
-                                "^芽针针剂$",
-                                "^芽針注射剤Ⅰ$",
-                                "^Yazhen Syringe C$"
-                            ]
+                            "custom_recognition_param": {
+                                "candidates": [
+                                    "芽针针剂",
+                                    "芽針針劑",
+                                    "芽針注射剤Ⅰ",
+                                    "Yazhen Syringe C"
+                                ]
+                            }
                         },
                         "SellProductSkyKingFlatsSellAttempt1SetMissHandler": {
                             "anchor": {
@@ -4785,12 +5087,14 @@
                     "pipeline_override": {
                         "SellProductSkyKingFlatsSelectItem1": {
                             "enabled": true,
-                            "expected": [
-                                "^錦草飲料$",
-                                "^锦草软饮$",
-                                "^錦草ソーダⅠ$",
-                                "^Jincao Drink$"
-                            ]
+                            "custom_recognition_param": {
+                                "candidates": [
+                                    "锦草软饮",
+                                    "錦草飲料",
+                                    "錦草ソーダⅠ",
+                                    "Jincao Drink"
+                                ]
+                            }
                         },
                         "SellProductSkyKingFlatsSellAttempt1SetMissHandler": {
                             "anchor": {
@@ -4805,12 +5109,14 @@
                     "pipeline_override": {
                         "SellProductSkyKingFlatsSelectItem1": {
                             "enabled": true,
-                            "expected": [
-                                "^赤銅零件$",
-                                "^赤铜零件$",
-                                "^赤銅部品$",
-                                "^Cuprium Part$"
-                            ]
+                            "custom_recognition_param": {
+                                "candidates": [
+                                    "赤铜零件",
+                                    "赤銅零件",
+                                    "赤銅部品",
+                                    "Cuprium Part"
+                                ]
+                            }
                         },
                         "SellProductSkyKingFlatsSellAttempt1SetMissHandler": {
                             "anchor": {
@@ -4825,11 +5131,13 @@
                     "pipeline_override": {
                         "SellProductSkyKingFlatsSelectItem1": {
                             "enabled": true,
-                            "expected": [
-                                "^息壤$",
-                                "^息壌$",
-                                "^Xiranite$"
-                            ]
+                            "custom_recognition_param": {
+                                "candidates": [
+                                    "息壤",
+                                    "息壌",
+                                    "Xiranite"
+                                ]
+                            }
                         },
                         "SellProductSkyKingFlatsSellAttempt1SetMissHandler": {
                             "anchor": {
@@ -4864,12 +5172,14 @@
                     "pipeline_override": {
                         "SellProductSkyKingFlatsSelectItem2": {
                             "enabled": true,
-                            "expected": [
-                                "^息壤玉葫蘆$",
-                                "^息壤玉葫芦$",
-                                "^息壌玉ひょうたん$",
-                                "^Xiranite Jade Gourd$"
-                            ]
+                            "custom_recognition_param": {
+                                "candidates": [
+                                    "息壤玉葫芦",
+                                    "息壤玉葫蘆",
+                                    "息壌玉ひょうたん",
+                                    "Xiranite Jade Gourd"
+                                ]
+                            }
                         },
                         "SellProductSkyKingFlatsSellAttempt2SetMissHandler": {
                             "anchor": {
@@ -4884,12 +5194,14 @@
                     "pipeline_override": {
                         "SellProductSkyKingFlatsSelectItem2": {
                             "enabled": true,
-                            "expected": [
-                                "^中容量武陵電池$",
-                                "^中容武陵电池$",
-                                "^中容量武陵バッテリー$",
-                                "^SC Wuling Battery$"
-                            ]
+                            "custom_recognition_param": {
+                                "candidates": [
+                                    "中容武陵电池",
+                                    "中容量武陵電池",
+                                    "中容量武陵バッテリー",
+                                    "SC Wuling Battery"
+                                ]
+                            }
                         },
                         "SellProductSkyKingFlatsSellAttempt2SetMissHandler": {
                             "anchor": {
@@ -4904,12 +5216,14 @@
                     "pipeline_override": {
                         "SellProductSkyKingFlatsSelectItem2": {
                             "enabled": true,
-                            "expected": [
-                                "^赫銅零件$",
-                                "^赫铜零件$",
-                                "^緋銅部品$",
-                                "^Hetonite Part$"
-                            ]
+                            "custom_recognition_param": {
+                                "candidates": [
+                                    "赫铜零件",
+                                    "赫銅零件",
+                                    "緋銅部品",
+                                    "Hetonite Part"
+                                ]
+                            }
                         },
                         "SellProductSkyKingFlatsSellAttempt2SetMissHandler": {
                             "anchor": {
@@ -4924,12 +5238,14 @@
                     "pipeline_override": {
                         "SellProductSkyKingFlatsSelectItem2": {
                             "enabled": true,
-                            "expected": [
-                                "^息壤葫蘆$",
-                                "^息壤葫芦$",
-                                "^息壌ひょうたん$",
-                                "^Xiranite Gourd$"
-                            ]
+                            "custom_recognition_param": {
+                                "candidates": [
+                                    "息壤葫芦",
+                                    "息壤葫蘆",
+                                    "息壌ひょうたん",
+                                    "Xiranite Gourd"
+                                ]
+                            }
                         },
                         "SellProductSkyKingFlatsSellAttempt2SetMissHandler": {
                             "anchor": {
@@ -4944,12 +5260,14 @@
                     "pipeline_override": {
                         "SellProductSkyKingFlatsSelectItem2": {
                             "enabled": true,
-                            "expected": [
-                                "^低容量武陵電池$",
-                                "^低容武陵电池$",
-                                "^小容量武陵バッテリー$",
-                                "^LC Wuling Battery$"
-                            ]
+                            "custom_recognition_param": {
+                                "candidates": [
+                                    "低容武陵电池",
+                                    "低容量武陵電池",
+                                    "小容量武陵バッテリー",
+                                    "LC Wuling Battery"
+                                ]
+                            }
                         },
                         "SellProductSkyKingFlatsSellAttempt2SetMissHandler": {
                             "anchor": {
@@ -4964,12 +5282,14 @@
                     "pipeline_override": {
                         "SellProductSkyKingFlatsSelectItem2": {
                             "enabled": true,
-                            "expected": [
-                                "^優質芽針針劑$",
-                                "^优质芽针针剂$",
-                                "^芽針注射剤Ⅱ$",
-                                "^Yazhen Syringe A$"
-                            ]
+                            "custom_recognition_param": {
+                                "candidates": [
+                                    "优质芽针针剂",
+                                    "優質芽針針劑",
+                                    "芽針注射剤Ⅱ",
+                                    "Yazhen Syringe A"
+                                ]
+                            }
                         },
                         "SellProductSkyKingFlatsSellAttempt2SetMissHandler": {
                             "anchor": {
@@ -4984,12 +5304,14 @@
                     "pipeline_override": {
                         "SellProductSkyKingFlatsSelectItem2": {
                             "enabled": true,
-                            "expected": [
-                                "^芽針針劑$",
-                                "^芽针针剂$",
-                                "^芽針注射剤Ⅰ$",
-                                "^Yazhen Syringe C$"
-                            ]
+                            "custom_recognition_param": {
+                                "candidates": [
+                                    "芽针针剂",
+                                    "芽針針劑",
+                                    "芽針注射剤Ⅰ",
+                                    "Yazhen Syringe C"
+                                ]
+                            }
                         },
                         "SellProductSkyKingFlatsSellAttempt2SetMissHandler": {
                             "anchor": {
@@ -5004,12 +5326,14 @@
                     "pipeline_override": {
                         "SellProductSkyKingFlatsSelectItem2": {
                             "enabled": true,
-                            "expected": [
-                                "^錦草飲料$",
-                                "^锦草软饮$",
-                                "^錦草ソーダⅠ$",
-                                "^Jincao Drink$"
-                            ]
+                            "custom_recognition_param": {
+                                "candidates": [
+                                    "锦草软饮",
+                                    "錦草飲料",
+                                    "錦草ソーダⅠ",
+                                    "Jincao Drink"
+                                ]
+                            }
                         },
                         "SellProductSkyKingFlatsSellAttempt2SetMissHandler": {
                             "anchor": {
@@ -5024,12 +5348,14 @@
                     "pipeline_override": {
                         "SellProductSkyKingFlatsSelectItem2": {
                             "enabled": true,
-                            "expected": [
-                                "^赤銅零件$",
-                                "^赤铜零件$",
-                                "^赤銅部品$",
-                                "^Cuprium Part$"
-                            ]
+                            "custom_recognition_param": {
+                                "candidates": [
+                                    "赤铜零件",
+                                    "赤銅零件",
+                                    "赤銅部品",
+                                    "Cuprium Part"
+                                ]
+                            }
                         },
                         "SellProductSkyKingFlatsSellAttempt2SetMissHandler": {
                             "anchor": {
@@ -5044,11 +5370,13 @@
                     "pipeline_override": {
                         "SellProductSkyKingFlatsSelectItem2": {
                             "enabled": true,
-                            "expected": [
-                                "^息壤$",
-                                "^息壌$",
-                                "^Xiranite$"
-                            ]
+                            "custom_recognition_param": {
+                                "candidates": [
+                                    "息壤",
+                                    "息壌",
+                                    "Xiranite"
+                                ]
+                            }
                         },
                         "SellProductSkyKingFlatsSellAttempt2SetMissHandler": {
                             "anchor": {
@@ -5083,12 +5411,14 @@
                     "pipeline_override": {
                         "SellProductSkyKingFlatsSelectItem3": {
                             "enabled": true,
-                            "expected": [
-                                "^息壤玉葫蘆$",
-                                "^息壤玉葫芦$",
-                                "^息壌玉ひょうたん$",
-                                "^Xiranite Jade Gourd$"
-                            ]
+                            "custom_recognition_param": {
+                                "candidates": [
+                                    "息壤玉葫芦",
+                                    "息壤玉葫蘆",
+                                    "息壌玉ひょうたん",
+                                    "Xiranite Jade Gourd"
+                                ]
+                            }
                         },
                         "SellProductSkyKingFlatsSellAttempt3SetMissHandler": {
                             "anchor": {
@@ -5103,12 +5433,14 @@
                     "pipeline_override": {
                         "SellProductSkyKingFlatsSelectItem3": {
                             "enabled": true,
-                            "expected": [
-                                "^中容量武陵電池$",
-                                "^中容武陵电池$",
-                                "^中容量武陵バッテリー$",
-                                "^SC Wuling Battery$"
-                            ]
+                            "custom_recognition_param": {
+                                "candidates": [
+                                    "中容武陵电池",
+                                    "中容量武陵電池",
+                                    "中容量武陵バッテリー",
+                                    "SC Wuling Battery"
+                                ]
+                            }
                         },
                         "SellProductSkyKingFlatsSellAttempt3SetMissHandler": {
                             "anchor": {
@@ -5123,12 +5455,14 @@
                     "pipeline_override": {
                         "SellProductSkyKingFlatsSelectItem3": {
                             "enabled": true,
-                            "expected": [
-                                "^赫銅零件$",
-                                "^赫铜零件$",
-                                "^緋銅部品$",
-                                "^Hetonite Part$"
-                            ]
+                            "custom_recognition_param": {
+                                "candidates": [
+                                    "赫铜零件",
+                                    "赫銅零件",
+                                    "緋銅部品",
+                                    "Hetonite Part"
+                                ]
+                            }
                         },
                         "SellProductSkyKingFlatsSellAttempt3SetMissHandler": {
                             "anchor": {
@@ -5143,12 +5477,14 @@
                     "pipeline_override": {
                         "SellProductSkyKingFlatsSelectItem3": {
                             "enabled": true,
-                            "expected": [
-                                "^息壤葫蘆$",
-                                "^息壤葫芦$",
-                                "^息壌ひょうたん$",
-                                "^Xiranite Gourd$"
-                            ]
+                            "custom_recognition_param": {
+                                "candidates": [
+                                    "息壤葫芦",
+                                    "息壤葫蘆",
+                                    "息壌ひょうたん",
+                                    "Xiranite Gourd"
+                                ]
+                            }
                         },
                         "SellProductSkyKingFlatsSellAttempt3SetMissHandler": {
                             "anchor": {
@@ -5163,12 +5499,14 @@
                     "pipeline_override": {
                         "SellProductSkyKingFlatsSelectItem3": {
                             "enabled": true,
-                            "expected": [
-                                "^低容量武陵電池$",
-                                "^低容武陵电池$",
-                                "^小容量武陵バッテリー$",
-                                "^LC Wuling Battery$"
-                            ]
+                            "custom_recognition_param": {
+                                "candidates": [
+                                    "低容武陵电池",
+                                    "低容量武陵電池",
+                                    "小容量武陵バッテリー",
+                                    "LC Wuling Battery"
+                                ]
+                            }
                         },
                         "SellProductSkyKingFlatsSellAttempt3SetMissHandler": {
                             "anchor": {
@@ -5183,12 +5521,14 @@
                     "pipeline_override": {
                         "SellProductSkyKingFlatsSelectItem3": {
                             "enabled": true,
-                            "expected": [
-                                "^優質芽針針劑$",
-                                "^优质芽针针剂$",
-                                "^芽針注射剤Ⅱ$",
-                                "^Yazhen Syringe A$"
-                            ]
+                            "custom_recognition_param": {
+                                "candidates": [
+                                    "优质芽针针剂",
+                                    "優質芽針針劑",
+                                    "芽針注射剤Ⅱ",
+                                    "Yazhen Syringe A"
+                                ]
+                            }
                         },
                         "SellProductSkyKingFlatsSellAttempt3SetMissHandler": {
                             "anchor": {
@@ -5203,12 +5543,14 @@
                     "pipeline_override": {
                         "SellProductSkyKingFlatsSelectItem3": {
                             "enabled": true,
-                            "expected": [
-                                "^芽針針劑$",
-                                "^芽针针剂$",
-                                "^芽針注射剤Ⅰ$",
-                                "^Yazhen Syringe C$"
-                            ]
+                            "custom_recognition_param": {
+                                "candidates": [
+                                    "芽针针剂",
+                                    "芽針針劑",
+                                    "芽針注射剤Ⅰ",
+                                    "Yazhen Syringe C"
+                                ]
+                            }
                         },
                         "SellProductSkyKingFlatsSellAttempt3SetMissHandler": {
                             "anchor": {
@@ -5223,12 +5565,14 @@
                     "pipeline_override": {
                         "SellProductSkyKingFlatsSelectItem3": {
                             "enabled": true,
-                            "expected": [
-                                "^錦草飲料$",
-                                "^锦草软饮$",
-                                "^錦草ソーダⅠ$",
-                                "^Jincao Drink$"
-                            ]
+                            "custom_recognition_param": {
+                                "candidates": [
+                                    "锦草软饮",
+                                    "錦草飲料",
+                                    "錦草ソーダⅠ",
+                                    "Jincao Drink"
+                                ]
+                            }
                         },
                         "SellProductSkyKingFlatsSellAttempt3SetMissHandler": {
                             "anchor": {
@@ -5243,12 +5587,14 @@
                     "pipeline_override": {
                         "SellProductSkyKingFlatsSelectItem3": {
                             "enabled": true,
-                            "expected": [
-                                "^赤銅零件$",
-                                "^赤铜零件$",
-                                "^赤銅部品$",
-                                "^Cuprium Part$"
-                            ]
+                            "custom_recognition_param": {
+                                "candidates": [
+                                    "赤铜零件",
+                                    "赤銅零件",
+                                    "赤銅部品",
+                                    "Cuprium Part"
+                                ]
+                            }
                         },
                         "SellProductSkyKingFlatsSellAttempt3SetMissHandler": {
                             "anchor": {
@@ -5263,11 +5609,13 @@
                     "pipeline_override": {
                         "SellProductSkyKingFlatsSelectItem3": {
                             "enabled": true,
-                            "expected": [
-                                "^息壤$",
-                                "^息壌$",
-                                "^Xiranite$"
-                            ]
+                            "custom_recognition_param": {
+                                "candidates": [
+                                    "息壤",
+                                    "息壌",
+                                    "Xiranite"
+                                ]
+                            }
                         },
                         "SellProductSkyKingFlatsSellAttempt3SetMissHandler": {
                             "anchor": {
@@ -5302,12 +5650,14 @@
                     "pipeline_override": {
                         "SellProductSkyKingFlatsSelectItem4": {
                             "enabled": true,
-                            "expected": [
-                                "^息壤玉葫蘆$",
-                                "^息壤玉葫芦$",
-                                "^息壌玉ひょうたん$",
-                                "^Xiranite Jade Gourd$"
-                            ]
+                            "custom_recognition_param": {
+                                "candidates": [
+                                    "息壤玉葫芦",
+                                    "息壤玉葫蘆",
+                                    "息壌玉ひょうたん",
+                                    "Xiranite Jade Gourd"
+                                ]
+                            }
                         },
                         "SellProductSkyKingFlatsSellAttempt4SetMissHandler": {
                             "anchor": {
@@ -5322,12 +5672,14 @@
                     "pipeline_override": {
                         "SellProductSkyKingFlatsSelectItem4": {
                             "enabled": true,
-                            "expected": [
-                                "^中容量武陵電池$",
-                                "^中容武陵电池$",
-                                "^中容量武陵バッテリー$",
-                                "^SC Wuling Battery$"
-                            ]
+                            "custom_recognition_param": {
+                                "candidates": [
+                                    "中容武陵电池",
+                                    "中容量武陵電池",
+                                    "中容量武陵バッテリー",
+                                    "SC Wuling Battery"
+                                ]
+                            }
                         },
                         "SellProductSkyKingFlatsSellAttempt4SetMissHandler": {
                             "anchor": {
@@ -5342,12 +5694,14 @@
                     "pipeline_override": {
                         "SellProductSkyKingFlatsSelectItem4": {
                             "enabled": true,
-                            "expected": [
-                                "^赫銅零件$",
-                                "^赫铜零件$",
-                                "^緋銅部品$",
-                                "^Hetonite Part$"
-                            ]
+                            "custom_recognition_param": {
+                                "candidates": [
+                                    "赫铜零件",
+                                    "赫銅零件",
+                                    "緋銅部品",
+                                    "Hetonite Part"
+                                ]
+                            }
                         },
                         "SellProductSkyKingFlatsSellAttempt4SetMissHandler": {
                             "anchor": {
@@ -5362,12 +5716,14 @@
                     "pipeline_override": {
                         "SellProductSkyKingFlatsSelectItem4": {
                             "enabled": true,
-                            "expected": [
-                                "^息壤葫蘆$",
-                                "^息壤葫芦$",
-                                "^息壌ひょうたん$",
-                                "^Xiranite Gourd$"
-                            ]
+                            "custom_recognition_param": {
+                                "candidates": [
+                                    "息壤葫芦",
+                                    "息壤葫蘆",
+                                    "息壌ひょうたん",
+                                    "Xiranite Gourd"
+                                ]
+                            }
                         },
                         "SellProductSkyKingFlatsSellAttempt4SetMissHandler": {
                             "anchor": {
@@ -5382,12 +5738,14 @@
                     "pipeline_override": {
                         "SellProductSkyKingFlatsSelectItem4": {
                             "enabled": true,
-                            "expected": [
-                                "^低容量武陵電池$",
-                                "^低容武陵电池$",
-                                "^小容量武陵バッテリー$",
-                                "^LC Wuling Battery$"
-                            ]
+                            "custom_recognition_param": {
+                                "candidates": [
+                                    "低容武陵电池",
+                                    "低容量武陵電池",
+                                    "小容量武陵バッテリー",
+                                    "LC Wuling Battery"
+                                ]
+                            }
                         },
                         "SellProductSkyKingFlatsSellAttempt4SetMissHandler": {
                             "anchor": {
@@ -5402,12 +5760,14 @@
                     "pipeline_override": {
                         "SellProductSkyKingFlatsSelectItem4": {
                             "enabled": true,
-                            "expected": [
-                                "^優質芽針針劑$",
-                                "^优质芽针针剂$",
-                                "^芽針注射剤Ⅱ$",
-                                "^Yazhen Syringe A$"
-                            ]
+                            "custom_recognition_param": {
+                                "candidates": [
+                                    "优质芽针针剂",
+                                    "優質芽針針劑",
+                                    "芽針注射剤Ⅱ",
+                                    "Yazhen Syringe A"
+                                ]
+                            }
                         },
                         "SellProductSkyKingFlatsSellAttempt4SetMissHandler": {
                             "anchor": {
@@ -5422,12 +5782,14 @@
                     "pipeline_override": {
                         "SellProductSkyKingFlatsSelectItem4": {
                             "enabled": true,
-                            "expected": [
-                                "^芽針針劑$",
-                                "^芽针针剂$",
-                                "^芽針注射剤Ⅰ$",
-                                "^Yazhen Syringe C$"
-                            ]
+                            "custom_recognition_param": {
+                                "candidates": [
+                                    "芽针针剂",
+                                    "芽針針劑",
+                                    "芽針注射剤Ⅰ",
+                                    "Yazhen Syringe C"
+                                ]
+                            }
                         },
                         "SellProductSkyKingFlatsSellAttempt4SetMissHandler": {
                             "anchor": {
@@ -5442,12 +5804,14 @@
                     "pipeline_override": {
                         "SellProductSkyKingFlatsSelectItem4": {
                             "enabled": true,
-                            "expected": [
-                                "^錦草飲料$",
-                                "^锦草软饮$",
-                                "^錦草ソーダⅠ$",
-                                "^Jincao Drink$"
-                            ]
+                            "custom_recognition_param": {
+                                "candidates": [
+                                    "锦草软饮",
+                                    "錦草飲料",
+                                    "錦草ソーダⅠ",
+                                    "Jincao Drink"
+                                ]
+                            }
                         },
                         "SellProductSkyKingFlatsSellAttempt4SetMissHandler": {
                             "anchor": {
@@ -5462,12 +5826,14 @@
                     "pipeline_override": {
                         "SellProductSkyKingFlatsSelectItem4": {
                             "enabled": true,
-                            "expected": [
-                                "^赤銅零件$",
-                                "^赤铜零件$",
-                                "^赤銅部品$",
-                                "^Cuprium Part$"
-                            ]
+                            "custom_recognition_param": {
+                                "candidates": [
+                                    "赤铜零件",
+                                    "赤銅零件",
+                                    "赤銅部品",
+                                    "Cuprium Part"
+                                ]
+                            }
                         },
                         "SellProductSkyKingFlatsSellAttempt4SetMissHandler": {
                             "anchor": {
@@ -5482,11 +5848,13 @@
                     "pipeline_override": {
                         "SellProductSkyKingFlatsSelectItem4": {
                             "enabled": true,
-                            "expected": [
-                                "^息壤$",
-                                "^息壌$",
-                                "^Xiranite$"
-                            ]
+                            "custom_recognition_param": {
+                                "candidates": [
+                                    "息壤",
+                                    "息壌",
+                                    "Xiranite"
+                                ]
+                            }
                         },
                         "SellProductSkyKingFlatsSellAttempt4SetMissHandler": {
                             "anchor": {
