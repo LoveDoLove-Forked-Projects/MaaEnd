@@ -1,0 +1,58 @@
+{
+    "AutoStockInStapleItemName": {
+        "roi_offset": [
+            -5,
+            201,
+            110,
+            30
+        ]
+    },
+    "AutoStockInStapleItemDiscountsWuling": {
+        "roi_offset": [
+            43,
+            -237,
+            22,
+            42
+        ]
+    },
+    "AutoStockInStapleItemDiscountsValleyIV": {
+        "roi_offset": [
+            43,
+            -237,
+            22,
+            42
+        ]
+    },
+    "AutoStockTargetStockBillColor": {
+        "roi_offset": [
+            23,
+            -55,
+            32,
+            13
+        ]
+    },
+    "AutoStockStapleBetterSliding": {
+        "action": {
+            "type": "Custom",
+            "param": {
+                "custom_action": "BetterSliding",
+                "custom_action_param": {
+                    "ClampTargetToMax": true,
+                    "DecreaseButton": "AutoStockpile/DecreaseButton.png",
+                    "Direction": "right",
+                    "IncreaseButton": "AutoStockpile/IncreaseButton.png",
+                    "GreenMask": true,
+                    "Quantity": {
+                        "Box": [
+                            304,
+                            540,
+                            54,
+                            39
+                        ],
+                        "OnlyRec": true
+                    }
+                }
+            }
+        }
+    }
+}
