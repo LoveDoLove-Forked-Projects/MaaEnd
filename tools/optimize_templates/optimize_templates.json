@@ -708,5 +708,6 @@
     "resource/image/SceneManager/WorldMenuProtocolPass1": "a673d72ea274d143de8f8196ba712e93744ddbafed4994233af2190e4eeb2f55",
     "resource/image/SceneManager/WorldMenuOperationalManual1": "9ed18c8e09a758839fcc779ccece74f4b7e7f8d62c0b2b0f8dde03daba06fc5e",
     "resource/image/SceneManager/WorldSpaceExit": "4c4bb533f29382bc591b20a90ad41bae4679b385998734e0f3c2b9d18f4b815d",
-    "resource/image/SceneManager/WorldSpaceExit1": "be3f071c1aab409f0c516fec64aad757ef201145af746aa387bede79fdc554fd"
+    "resource/image/SceneManager/WorldSpaceExit1": "be3f071c1aab409f0c516fec64aad757ef201145af746aa387bede79fdc554fd",
+    "resource/image/GiftOperator/TrustIcon": "fd765567f638c748541d0d1943bdf8a446b27e333d79e5197a299ea405068f09"
 }
