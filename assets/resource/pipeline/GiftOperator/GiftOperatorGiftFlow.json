@@ -16,8 +16,7 @@
             }
         },
         "action": {
-            "type": "Click",
-            "param": {}
+            "type": "Click"
         },
         "next": [
             "GiftOperatorGiftUI"
@@ -43,7 +42,7 @@
             "GiftOperatorLeave"
         ],
         "focus": {
-            "Node.Recognition.Succeeded": "⚠️ 干员好感度已满"
+            "Node.Recognition.Succeeded": "$task.GiftOperator.focus.max_affinity"
         }
     },
     "GiftOperatorBranchReceive": {
@@ -118,8 +117,7 @@
             }
         },
         "action": {
-            "type": "Click",
-            "param": {}
+            "type": "Click"
         },
         "post_wait_freezes": {
             "time": 200,
@@ -146,27 +144,88 @@
             }
         },
         "action": {
-            "type": "Click",
-            "param": {}
+            "type": "Click"
         },
         "next": [
-            "GiftOperatorLeave",
-            "GiftOperatorGiftDialog"
+            "GiftOperatorLeave"
         ]
+    },
+    "GiftOperatorGiftSelectedLabelColor": {
+        "desc": "选中礼物标签颜色",
+        "recognition": {
+            "type": "ColorMatch",
+            "param": {
+                "roi": [
+                    28,
+                    500,
+                    1252,
+                    50
+                ],
+                "method": 40,
+                "lower": [
+                    28,
+                    230,
+                    240
+                ],
+                "upper": [
+                    28,
+                    255,
+                    255
+                ],
+                "count": 10,
+                "connected": true
+            }
+        }
+    },
+    "GiftOperatorGiftSelectedTextColor": {
+        "desc": "选中礼物文字颜色",
+        "recognition": {
+            "type": "ColorMatch",
+            "param": {
+                "roi": "GiftOperatorGiftSelectedLabelColor",
+                "lower": [
+                    72,
+                    72,
+                    66
+                ],
+                "upper": [
+                    114,
+                    110,
+                    79
+                ],
+                "count": 10,
+                "connected": true
+            }
+        }
+    },
+    "GiftOperatorGiftSelectedText": {
+        "desc": "选中礼物文字",
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": "GiftOperatorGiftSelectedTextColor",
+                "roi_offset": [
+                    -2,
+                    -2,
+                    4,
+                    4
+                ],
+                "expected": [
+                    "\\d+"
+                ],
+                "only_rec": true
+            }
+        }
     },
     "GiftOperatorGiftSelected": {
         "desc": "确认礼物已选中",
         "recognition": {
-            "type": "TemplateMatch",
+            "type": "And",
             "param": {
-                "roi": [
-                    69,
-                    504,
-                    63,
-                    53
-                ],
-                "template": [
-                    "GiftOperator/YellowSelect1.png"
+                "all_of": [
+                    "GiftOperatorGiftSelectedLabelColor",
+                    "GiftOperatorGiftSelectedTextColor",
+                    "GiftOperatorGiftSelectedText"
                 ]
             }
         },
@@ -214,8 +273,17 @@
             }
         },
         "action": {
-            "type": "Click",
-            "param": {}
+            "type": "Click"
+        },
+        "post_wait_freezes": {
+            "time": 200,
+            "timeout": 3000,
+            "target": [
+                102,
+                103,
+                15,
+                15
+            ]
         },
         "next": [
             "GiftOperatorWaitChat",
@@ -223,8 +291,7 @@
             "GiftOperatorSkipDialog",
             "GiftOperatorBranchGift",
             "GiftOperatorBranchMaxAffinity",
-            "GiftOperatorLeave",
-            "GiftOperatorReceiveDialog"
+            "GiftOperatorLeave"
         ]
     },
     "GiftOperatorSkipDialog": {
@@ -244,14 +311,12 @@
             }
         },
         "action": {
-            "type": "Click",
-            "param": {}
+            "type": "Click"
         },
         "next": [
             "GiftOperatorBranchGift",
             "GiftOperatorBranchReceive",
-            "GiftOperatorBranchMaxAffinity",
-            "GiftOperatorSkipDialog"
+            "GiftOperatorBranchMaxAffinity"
         ]
     }
 }
