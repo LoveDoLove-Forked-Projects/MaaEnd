@@ -6,7 +6,8 @@
         "custom_action": "SubTask",
         "custom_action_param": {
             "sub": [
-                "StashBackpackSubTask"
+                "StashBackpackSubTask",
+                "GiftOperatorClearHitCount"
             ]
         },
         "post_delay": 0,
@@ -78,16 +79,41 @@
                     318
                 ],
                 "expected": [
+                    // @i18n-skip
                     "暂时离开",
                     "暫時離開",
                     "(?i)Leave\\s*for\\s*now",
-                    "一旦離れる"
+                    "一旦離れる",
+                    "(?i)Exit",
+                    "退出",
+                    "离开",
+                    "離開",
+                    "(?i)Leave",
+                    "離れる"
                 ]
             }
         },
         "action": {
             "type": "Click",
             "param": {}
+        }
+    },
+    "GiftOperatorClearHitCount": {
+        "desc": "清空节点MaxHit",
+        "action": "Custom",
+        "post_delay": 0,
+        "pre_delay": 0,
+        "rate_limit": 0,
+        "custom_action": "ClearHitCount",
+        "custom_action_param": {
+            "nodes": [
+                "GiftOperatorMoveLocation3",
+                "GiftOperatorMoveLocation3Move",
+                "GiftOperatorMoveLocation2",
+                "GiftOperatorMoveLocation2Move",
+                "GiftOperatorMoveLocation1",
+                "GiftOperatorMoveLocation1Move"
+            ]
         }
     }
 }
