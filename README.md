@@ -5,6 +5,8 @@
 
 <p align="center"><strong>不要去森空岛讨论MAA!!!!!</strong></p>
 
+---
+
 <p align="center">
   <img alt="LOGO" src="https://end.maafw.com/MaaEnd-Tiny-512.png" width="256" height="256" />
 </p>
