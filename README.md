@@ -1,9 +1,9 @@
 <!-- markdownlint-disable MD033 MD041 -->
 <p align="center">
-  <img alt="不要去森空岛讨论MAA" src="docs/img/NoSkland.png" width="280" />
+  <img alt="不要去森空岛讨论MAA" src="https://end.maafw.com/NoSkland-Tiny.webp" width="280" />
 </p>
 
-<p align="center"><strong>不要去森空岛讨论MAA!!!!!</strong></p>
+<p align="center"><strong>不要去森空岛讨论 MAA 了!!!!!</strong></p>
 
 ---
 
