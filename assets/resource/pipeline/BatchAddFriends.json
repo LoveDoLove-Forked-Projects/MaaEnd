@@ -263,8 +263,8 @@
                 "upper": [
                     255
                 ],
-                "count": 100,
-                "connected": true
+                "connected": true,
+                "count": 100
             }
         }
     },

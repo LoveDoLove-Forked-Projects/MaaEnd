@@ -732,6 +732,7 @@
                 "box_index": 1
             }
         },
+        "pre_delay": 0,
         "action": {
             "type": "Custom",
             "param": {
@@ -742,7 +743,6 @@
             "time": 200,
             "timeout": 3000
         },
-        "pre_delay": 0,
         "next": [
             "GiftOperatorSkipDialog",
             "GiftOperatorWaitChat" //防止干员突然走过来导致选项位置变化点击丢失
