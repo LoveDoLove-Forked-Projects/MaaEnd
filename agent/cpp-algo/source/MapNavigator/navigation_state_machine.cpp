@@ -704,11 +704,13 @@ bool NavigationStateMachine::TickNavigate()
         }
     }
 
+    // Near a strict-arrival goal only the *detour* is unsafe (it routes away from the exact point);
+    // a jump is still a safe nudge, so recovery is allowed to enter here and the suppression is
+    // applied to the detour step alone, below.
     const bool near_strict_goal = waypoint.RequiresStrictArrival()
         && route.waypoint_distance <= arrival_distance + kCloseGoalDetourSuppressSlack;
     const bool should_try_recovery = session_->phase() == NaviPhase::Navigate && stalled_ms >= kObstacleRecoveryMinTriggerMs
-                                     && (route.progress_distance > kNoProgressMinDistance || waypoint.RequiresStrictArrival())
-                                     && !near_strict_goal;
+                                     && (route.progress_distance > kNoProgressMinDistance || waypoint.RequiresStrictArrival());
     if (should_try_recovery) {
         const std::optional<DynamicAnchor> anchor = ResolveCurrentAnchor(session_, *position_);
         if (anchor) {
@@ -735,25 +737,18 @@ bool NavigationStateMachine::TickNavigate()
                                             && std::chrono::duration_cast<std::chrono::milliseconds>(now - recovery.last_replan_at).count()
                                                    < kDynamicRecoveryRetryIntervalMs;
             if (!retry_cooling_down) {
-                if (recovery.attempt_count >= kDynamicRecoveryMaxAttemptsPerAnchor) {
-                    return FailNavigation(
-                        "dynamic_recovery_exhausted",
-                        "Dynamic recovery attempts were exhausted and navigation was terminated.",
-                        route.progress_distance,
-                        NaviMath::NormalizeAngle(route.route_heading - current_heading),
-                        stalled_ms);
-                }
-
                 recovery.last_replan_at = now;
+                ++recovery.jump_attempt_count;
                 const NaviPosition jump_start = *position_;
-                LogInfo << "Dynamic recovery jump pulse issued." << VAR(recovery.attempt_count + 1);
+                LogInfo << "Dynamic recovery jump pulse issued." << VAR(recovery.jump_attempt_count)
+                        << VAR(recovery.detour_attempt_count);
                 motion_controller_->SetAction(LocalDriverAction::JumpForward, true);
                 utils::SleepFor(kActionJumpSettleMs);
                 motion_controller_->SetForwardState(false);
                 if (!CaptureCurrentPosition(false) || position_provider_->LastCaptureWasHeld()
                     || position_provider_->LastCaptureWasBlackScreen() || !position_->valid) {
                     LogWarn << "Dynamic recovery waiting for post-jump local tracking fix." << VAR(stalled_ms)
-                            << VAR(recovery.attempt_count);
+                            << VAR(recovery.jump_attempt_count);
                     utils::SleepFor(kTargetTickMs);
                     return true;
                 }
@@ -790,28 +785,31 @@ bool NavigationStateMachine::TickNavigate()
                     recovery.started_at = now;
                     recovery.anchor_index = post_jump_anchor->first;
                     recovery.last_replan_at = now;
+                    recovery.jump_attempt_count = 1;
                 }
 
-                ++recovery.attempt_count;
-                if (TryApplyDynamicOverlayToAnchor(
-                        "recovery_navmesh_detour",
-                        post_jump_anchor->first,
-                        post_jump_anchor->second,
-                        true,
-                        route.route_heading)) {
-                    SelectPhaseForCurrentWaypoint("recovery_navmesh_detour");
-                    return true;
-                }
+                // The jump pulse above runs every recovery tick — so even once we are detouring, a
+                // fresh stall keeps trying to hop free first ("jump during detour"). The detour is the
+                // fallback: it only kicks in after the jump has failed kRecoveryJumpAttemptsBeforeDetour
+                // times for this anchor, and is suppressed next to a strict goal where it would route
+                // away from the exact point (there we keep jumping instead).
+                const bool detour_allowed =
+                    !near_strict_goal && recovery.jump_attempt_count >= kRecoveryJumpAttemptsBeforeDetour;
+                if (detour_allowed) {
+                    ++recovery.detour_attempt_count;
+                    if (TryApplyDynamicOverlayToAnchor(
+                            "recovery_navmesh_detour",
+                            post_jump_anchor->first,
+                            post_jump_anchor->second,
+                            true,
+                            route.route_heading)) {
+                        SelectPhaseForCurrentWaypoint("recovery_navmesh_detour");
+                        return true;
+                    }
 
-                LogWarn << "Dynamic recovery detour attempt failed." << VAR(recovery.attempt_count) << VAR(post_jump_anchor->first)
-                        << VAR(route.progress_distance) << VAR(stalled_ms);
-                if (recovery.attempt_count >= kDynamicRecoveryMaxAttemptsPerAnchor) {
-                    return FailNavigation(
-                        "dynamic_recovery_exhausted",
-                        "Dynamic recovery attempts were exhausted and navigation was terminated.",
-                        route.progress_distance,
-                        NaviMath::NormalizeAngle(route.route_heading - current_heading),
-                        stalled_ms);
+                    LogWarn << "Dynamic recovery detour attempt failed." << VAR(recovery.detour_attempt_count)
+                            << VAR(recovery.jump_attempt_count) << VAR(post_jump_anchor->first)
+                            << VAR(route.progress_distance) << VAR(stalled_ms);
                 }
                 utils::SleepFor(kTargetTickMs);
                 return true;
