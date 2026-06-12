@@ -1011,5 +1011,11 @@
     "task.AccountSwitch.label": "自動アカウント切替",
     "task.AccountSwitch.description": "現在のアカウントからログアウトし、指定した下4桁のアカウントに切り替えます",
     "option.AccountSwitchLastFourDigits.label": "対象アカウント下4桁",
-    "option.AccountSwitchLastFourDigits.LastFourDigits.label": "下4桁を入力"
+    "option.AccountSwitchLastFourDigits.LastFourDigits.label": "下4桁を入力",
+    "task.TrialOfSwordmancy.label": "🗡️剣術演武",
+    "task.TrialOfSwordmancy.description": "デイリー剣術演武 / コーティング周回を自動完了",
+    "option.TrialOfSwordmancyMode.label": "タスクモード",
+    "option.TrialOfSwordmancyMode.description": "デイリー剣術演武：自動でカードを引いて戦闘\nコーティング周回：自由演算モード中、銘牌ガチャ画面からタスクを開始してください",
+    "option.TrialOfSwordmancyMode.cases.Daily.label": "デイリー剣術演武",
+    "option.TrialOfSwordmancyMode.cases.Coating.label": "コーティング周回"
 }

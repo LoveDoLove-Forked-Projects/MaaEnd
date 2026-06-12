@@ -1,0 +1,223 @@
+{
+    "TrialOfSwordmancyCoatingMain": {
+        "desc": "自动刷镀层主入口",
+        "pre_delay": 0,
+        "post_delay": 0,
+        "next": [
+            "TrialOfSwordmancyCoating1"
+        ]
+    },
+    "TrialOfSwordmancyCoating1": {
+        "desc": "刷镀层第1次抽取铭牌",
+        "recognition": "OCR",
+        "roi": [
+            1152,
+            525,
+            94,
+            34
+        ],
+        "expected": [
+            "抽取铭牌",
+            "抽取銘牌",
+            "(?i)Draw",
+            "銘牌を引く",
+            "명판 뽑기"
+        ],
+        "action": "Click",
+        "post_delay": 800,
+        "next": [
+            "TrialOfSwordmancyCoatingCheck1",
+            "TrialOfSwordmancyCoatingGiveUp"
+        ]
+    },
+    "TrialOfSwordmancyCoatingCheck1": {
+        "desc": "刷镀层第1次检查战力点",
+        "recognition": "Or",
+        "any_of": [
+            "TrialOfSwordmancyBattlePts1",
+            "TrialOfSwordmancyBattlePts2",
+            "TrialOfSwordmancyBattlePts3",
+            "TrialOfSwordmancyBattlePts4",
+            "TrialOfSwordmancyBattlePts5"
+        ],
+        "next": [
+            "TrialOfSwordmancyCoating2"
+        ]
+    },
+    "TrialOfSwordmancyCoating2": {
+        "desc": "刷镀层第2次抽取铭牌",
+        "recognition": "OCR",
+        "roi": [
+            1152,
+            525,
+            94,
+            34
+        ],
+        "expected": [
+            "抽取铭牌",
+            "抽取銘牌",
+            "(?i)Draw",
+            "銘牌を引く",
+            "명판 뽑기"
+        ],
+        "action": "Click",
+        "post_delay": 800,
+        "next": [
+            "TrialOfSwordmancyCoatingCheck2",
+            "TrialOfSwordmancyCoatingGiveUp"
+        ]
+    },
+    "TrialOfSwordmancyCoatingCheck2": {
+        "desc": "刷镀层第2次检查战力点",
+        "recognition": "Or",
+        "any_of": [
+            "TrialOfSwordmancyBattlePts6",
+            "TrialOfSwordmancyBattlePts7",
+            "TrialOfSwordmancyBattlePts8",
+            "TrialOfSwordmancyBattlePts9",
+            "TrialOfSwordmancyBattlePts10"
+        ],
+        "next": [
+            "TrialOfSwordmancyCoating3"
+        ]
+    },
+    "TrialOfSwordmancyCoating3": {
+        "desc": "刷镀层第3次抽取铭牌",
+        "recognition": "OCR",
+        "roi": [
+            1152,
+            525,
+            94,
+            34
+        ],
+        "expected": [
+            "抽取铭牌",
+            "抽取銘牌",
+            "(?i)Draw",
+            "銘牌を引く",
+            "명판 뽑기"
+        ],
+        "action": "Click",
+        "post_delay": 800,
+        "next": [
+            "TrialOfSwordmancyCoatingCheck3",
+            "TrialOfSwordmancyCoatingGiveUp"
+        ]
+    },
+    "TrialOfSwordmancyCoatingCheck3": {
+        "desc": "刷镀层第3次检查战力点",
+        "recognition": "Or",
+        "any_of": [
+            "TrialOfSwordmancyBattlePts0",
+            "TrialOfSwordmancyBattlePts1",
+            "TrialOfSwordmancyBattlePts2",
+            "TrialOfSwordmancyBattlePts3",
+            "TrialOfSwordmancyBattlePts4"
+        ],
+        "next": [
+            "TrialOfSwordmancyCoating4"
+        ]
+    },
+    "TrialOfSwordmancyCoating4": {
+        "desc": "刷镀层第4次抽取铭牌",
+        "recognition": "OCR",
+        "roi": [
+            1152,
+            525,
+            94,
+            34
+        ],
+        "expected": [
+            "抽取铭牌",
+            "抽取銘牌",
+            "(?i)Draw",
+            "銘牌を引く",
+            "명판 뽑기"
+        ],
+        "action": "Click",
+        "post_delay": 800,
+        "next": [
+            "TrialOfSwordmancyCoatingCheck4",
+            "TrialOfSwordmancyCoatingGiveUp"
+        ]
+    },
+    "TrialOfSwordmancyCoatingCheck4": {
+        "desc": "刷镀层第4次检查战力点",
+        "recognition": "Or",
+        "any_of": [
+            "TrialOfSwordmancyBattlePts5",
+            "TrialOfSwordmancyBattlePts6",
+            "TrialOfSwordmancyBattlePts7",
+            "TrialOfSwordmancyBattlePts8",
+            "TrialOfSwordmancyBattlePts9"
+        ],
+        "next": [
+            "TrialOfSwordmancyCoating5"
+        ]
+    },
+    "TrialOfSwordmancyCoating5": {
+        "desc": "刷镀层第5次抽取铭牌",
+        "recognition": "OCR",
+        "roi": [
+            1152,
+            525,
+            94,
+            34
+        ],
+        "expected": [
+            "抽取铭牌",
+            "抽取銘牌",
+            "(?i)Draw",
+            "銘牌を引く",
+            "명판 뽑기"
+        ],
+        "action": "Click",
+        "post_delay": 800,
+        "next": [
+            "TrialOfSwordmancyCoatingCheck5",
+            "TrialOfSwordmancyCoatingGiveUp"
+        ]
+    },
+    "TrialOfSwordmancyCoatingCheck5": {
+        "desc": "刷镀层第5次检查战力点",
+        "recognition": "Or",
+        "any_of": [
+            "TrialOfSwordmancyBattlePts10"
+        ],
+        "next": []
+    },
+    "TrialOfSwordmancyCoatingGiveUp": {
+        "desc": "刷镀层放弃当前抽取",
+        "recognition": "OCR",
+        "roi": [
+            154,
+            593,
+            114,
+            87
+        ],
+        "expected": [
+            "放弃"
+        ],
+        "action": "Click",
+        "next": [
+            "TrialOfSwordmancyCoatingEnterFreeCalc"
+        ]
+    },
+    "TrialOfSwordmancyCoatingEnterFreeCalc": {
+        "desc": "点击进入演算",
+        "recognition": "And",
+        "all_of": [
+            "TrialOfSwordmancyEnterTrialMenu"
+        ],
+        "action": {
+            "type": "Custom",
+            "param": {
+                "custom_action": "AutoAltClickAction"
+            }
+        },
+        "post_delay": 1000,
+        "next": [
+            "TrialOfSwordmancyCoating1"
+        ]
+    }
+}
