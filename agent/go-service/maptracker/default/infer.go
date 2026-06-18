@@ -300,9 +300,7 @@ func (i *MapTrackerInfer) inferLocation(ctrlType string, screenImg *image.RGBA, 
 	}
 
 	miniMap = minicv.ImageScale(miniMap, scale)
-	miniMapBounds := miniMap.Bounds()
-	miniMapW, miniMapH := miniMapBounds.Dx(), miniMapBounds.Dy()
-	miniMapHalfW, miniMapHalfH := float64(miniMapW)/2.0, float64(miniMapH)/2.0
+	miniMapHalfW, miniMapHalfH := float64(miniMap.Bounds().Dx())/2.0, float64(miniMap.Bounds().Dy())/2.0
 
 	// Precompute needle (minimap) statistics for all matches
 	miniStats := minicv.GetImageStats(miniMap)
@@ -515,9 +513,9 @@ func (i *MapTrackerInfer) inferRotation(ctrlType string, screenImg *image.RGBA, 
 			// Rotate the patch
 			rotatedRGBA := minicv.ImageRotate(patch, float64(a))
 
-			// Match against pointer template
+			// Match against pointer template and ignore green-screen pixels in the template.
 			integral := minicv.GetIntegralArray(rotatedRGBA)
-			_, _, matchVal := minicv.MatchTemplate(rotatedRGBA, integral, pointerTemplate.Image, pointerTemplate.Stats)
+			_, _, matchVal := minicv.MatchTemplateWithMask(rotatedRGBA, integral, pointerTemplate.Image, pointerTemplate.Stats, 0x00FF00)
 
 			resChan <- result{a, matchVal}
 		}(angle)
