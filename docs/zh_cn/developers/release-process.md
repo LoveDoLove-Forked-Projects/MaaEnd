@@ -19,7 +19,7 @@
 
 ### 我该往哪个分支提 PR？
 
-``` text
+```text
 你的改动是什么？
   ├─ 新功能 / 重构 / 日常修复  → 往 v2 分支提
   └─ 修复影响正式版（Stable）的 Bug   → 往 release/vX.Y 分支提
@@ -45,7 +45,7 @@
 
 ### 发版周期
 
-``` text
+```text
 每天       Beta（vX.Y.Z-beta.N）→ 基于 v2（周四不发 Beta，发 RC）
     周四   RC（vX.Y.Z-rc.N）→ 基于 v2
            ├─ CI 自动创建 release/vX.Y 分支
