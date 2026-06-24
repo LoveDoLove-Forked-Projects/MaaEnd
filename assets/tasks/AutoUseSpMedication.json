@@ -11,7 +11,7 @@
                 "ADB"
             ],
             "group": [
-                "sanity_sink"
+                "valuables_vault"
             ],
             "option": [
                 "AutoUseSpMedicationExpireWithinDays",
