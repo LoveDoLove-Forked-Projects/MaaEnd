@@ -50,7 +50,7 @@ description: 分析 MaaEnd 上游仓库公开 Issue（`https://github.com/MaaEnd
 
 5. **DMP 崩溃转储分析（如有 `.dmp` 文件则必须执行此步骤）。**
 
-    如果在日志包内或 issue 附件中发现了 `.dmp` 文件，**立即读取 `.Codex/skills/dmp-analysis/SKILL.md` 并严格按其流程执行**。不要跳过这一步，不要只凭日志文本猜测崩溃原因。
+    如果在日志包内或 issue 附件中发现了 `.dmp` 文件，**立即读取 `.agents/skills/dmp-analysis/SKILL.md` 并严格按其流程执行**。不要跳过这一步，不要只凭日志文本猜测崩溃原因。
 
     a. 按照 `dmp-analysis/SKILL.md` 的完整流程完成崩溃转储分析，包括：- 解析异常类型、崩溃地址、崩溃模块 - 提取 crashing thread 的完整堆栈帧 - 下载对应版本的 PDB 符号并使用 `dump_syms` + `minidump-stackwalk` 完成符号化
     b. DMP 的进程 PID（通常在文件名中，如 `MaaEnd.exe.18188.dmp` → PID 18188）必须与 `maafw.log` 中的 `[Px<pid>]` 标签交叉验证，确认是同一次崩溃会话。
@@ -213,7 +213,7 @@ description: 分析 MaaEnd 上游仓库公开 Issue（`https://github.com/MaaEnd
 
 8. 专项任务增强分析（Specialized Task Analysis）。
 
-    仅当日志中已经明确识别出具体任务入口名或 `task id` 时，才尝试加载 `.Codex/skills/tasks/` 下的专项分析 skill。
+    仅当日志中已经明确识别出具体任务入口名或 `task id` 时，才尝试加载 `.agents/skills/tasks/` 下的专项分析 skill。
 
     查找规则：
     - 只使用日志中的原始任务名做匹配，不要自行改写、翻译、概括或猜测任务名。
@@ -437,13 +437,13 @@ Translate the complete conclusion directly into English and paste it here. Note 
 - **分包缺失要停止分析**：如果只能找到部分 part，或 issue 文本暗示还有未下载的分包，必须回到 issue 正文和评论继续查找；仍找不到则先在正文输出提醒，再进行分析。
 - **报告分包完整性**：分析过程或最终报告中要能说明实际下载了哪些 part，以及是否存在缺失 part；如果日志不是分包，也按单文件日志正常处理。
 - **DMP 堆栈必须完整输出**：如果 issue 存在 `.dmp` 文件，最终报告中必须包含 `## DMP 崩溃分析` 区域，其中的崩溃堆栈必须列出 crashing thread 的全部有效帧（module+offset 或 function+line），禁止省略或用"等"代替。如果符号化帧涉及 MaaFramework/MXU，必须附上游 GitHub blob 行号链接。如果最终报告中缺少此区域而 issue 明确有 DMP，说明分析流程不完整，需要返回步骤 5 补做。
-- **DMP 分析必须先读 skill**：发现 `.dmp` 时必须先读取 `.Codex/skills/dmp-analysis/SKILL.md` 再动手，不要自行发明解析流程。特别注意该 skill 中关于 `0xC0000409` 子参数含义等分析细节。
+- **DMP 分析必须先读 skill**：发现 `.dmp` 时必须先读取 `.agents/skills/dmp-analysis/SKILL.md` 再动手，不要自行发明解析流程。特别注意该 skill 中关于 `0xC0000409` 子参数含义等分析细节。
 - 不要只看一个日志文件下结论。
 - 不要把“维护者评论”当成唯一证据。
 - 不要把环境告警自动等同于根因。
 - 如果 issue 版本很旧，要明确区分“当时的根因”和“当前分支是否已修复”。
 - 如果用户日志与当前代码不一致，先按用户版本 tag 复核；若确认已修，再看修复是否已进入 tag / release：已发版建议升级，未发版建议等待 release。
-- 如果识别到特定任务，除了常规日志筛查，还必须额外读取并执行 `.Codex/skills/tasks/` 下对应的专项分析 skill。该专项 skill 独立存放，不能把其规则散落地手工记忆替代。
+- 如果识别到特定任务，除了常规日志筛查，还必须额外读取并执行 `.agents/skills/tasks/` 下对应的专项分析 skill。该专项 skill 独立存放，不能把其规则散落地手工记忆替代。
 - 如果结论是“功能不支持”，必须给出代码级依据，例如任务控制器白名单、无效的 ADB pipeline、缺失的控制器分支或文档限制。
 - 如果回答里出现任务名、任务描述、选项名、提示文案，优先使用 `assets/locales/interface/zh_cn.json` 的中文文案；必要时才在括号里补原始 id。
 - 如果回答里引用了具体代码行，直接给远端 GitHub `blob` 行号链接，用尖括号包裹，不要给本地路径加行号。
