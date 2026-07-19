@@ -31,8 +31,8 @@
             255,
             255
         ],
-        "count": 1,
         "connected": false,
+        "count": 1,
         "order_by": "Vertical"
     },
     "VisitFriendsRecognitionItemNameByEnterButton": {
