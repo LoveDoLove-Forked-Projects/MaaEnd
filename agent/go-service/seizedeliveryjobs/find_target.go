@@ -44,7 +44,7 @@ func readMinReward(ctx *maa.Context) (float64, error) {
 		Msg("MinReward node json")
 	// expected 可能出现在顶层（V1 pipeline）或 recognition.param.expected（V2）
 	var node struct {
-		Expected []string `json:"expected"`
+		Expected    []string `json:"expected"`
 		Recognition struct {
 			Param struct {
 				Expected []string `json:"expected"`

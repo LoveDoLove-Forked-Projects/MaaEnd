@@ -326,8 +326,8 @@ When writing a Pipeline, the built-in `TemplateMatch` / `OCR` / `Click` / `Swipe
 | Run a series of subtasks in order        | `SubTask`                     |
 | Clear hit count of a node                | `ClearHitCount`               |
 | Force an Action to fail                  | `FalseAction`                 |
-| Repeat an action until a node appears            | `RepeatUntilFoundAction` |
-| Repeat an action until a node disappears         | `RepeatUntilNotFoundAction` |
+| Repeat an action until a node appears    | `RepeatUntilFoundAction`      |
+| Repeat an action until a node disappears | `RepeatUntilNotFoundAction`   |
 | Actively stop the current task           | `PostStop`                    |
 | Change node parameters at runtime        | `PipelineOverride`            |
 | Write keywords as regex back to OCR node | `AttachToExpectedRegexAction` |
