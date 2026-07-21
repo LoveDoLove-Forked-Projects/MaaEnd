@@ -303,6 +303,50 @@ Notes:
 - To restart a list scan, clear that Custom node's `attach.last_text` (preferably also reset `unchanged_count` to `0`, for example via `PipelineOverride`).
 - This recognizer only answers "did the first/last OCR fingerprint change"; scrolling/clicking still belong in Pipeline.
 
+### ExpendableRecognition
+
+The `ExpendableRecognition` implementation is located in `agent/go-service/common/expendable`. It implements one-shot consumption of list items (visit once, then exclude via `attach.visited`), such as unread event-center entries or friends in a visit list.
+
+Parameters:
+
+- `candidate: string`: Required. An `OCR` node, or an `And` whose `box_index` points at the text OCR. Only that named OCR is patched; the candidate hit box is returned for `Click`.
+- `visited_node: string`: Optional. Read/write `attach.visited` on this node instead of the current Custom node. Multiple consumable nodes can share one blacklist (e.g. remark-first + any-friend).
+
+Behavior:
+
+1. Load `attach.visited` from `visited_node` (or the current Custom node).
+2. Resolve the key OCR from `candidate` (`And.box_index`), read its `expected`, rebuild a negative blacklist from `visited`, and override only `expected` (`order_by` and other fields stay as-is).
+3. Run `candidate`; miss means no match.
+4. Extract OCR text from the hit, append to that node's `attach.visited`, and return the hit box.
+
+Candidate layout, click target, and remark priority (multi `expected` + `order_by: Expected`, or two consumable nodes + shared `visited_node`) stay in Pipeline.
+
+Example file: [`ExpendableRecognition.json`](../../../assets/resource/pipeline/Interface/Example/ExpendableRecognition.json)
+
+```json
+{
+    "recognition": {
+        "type": "Custom",
+        "param": {
+            "custom_recognition": "ExpendableRecognition",
+            "custom_recognition_param": {
+                "candidate": "SomeCandidateAnd"
+            }
+        }
+    },
+    "attach": {
+        "visited": []
+    }
+}
+```
+
+Notes:
+
+- State lives in `attach.visited` on `visited_node` (default: the current Custom recognition node).
+- Clear that node's `attach.visited` before a fresh scan (task re-entry or `PipelineOverride`).
+- `expected` on key OCR nodes is fully replaced with "base patterns + visited blacklist"; bases come from the node before override (previous exclusion prefixes are stripped).
+- Key OCR leaves must be **named node refs** (`And.box_index` must not point at an inline OCR object).
+
 ### ScheduleRecognition
 
 The `ScheduleRecognition` implementation is located in `agent/go-service/common/schedule`. It is used to determine whether the current task should continue executing based on the day of the week. It only returns whether recognition matches; it does not directly run subtasks in Go; subsequent flows should be organized via the Pipeline's `next`.
@@ -335,6 +379,7 @@ When writing a Pipeline, the built-in `TemplateMatch` / `OCR` / `Click` / `Swipe
 | Write keywords as regex back to OCR node | `AttachToExpectedRegexAction` |
 | Evaluate OCR numerical expressions       | `ExpressionRecognition`       |
 | Detect whether list OCR text changed     | `ListCompleteRecognition`     |
+| Consumable pick (visited exclusion)      | `ExpendableRecognition`       |
 | Gate subsequent nodes by day of week     | `ScheduleRecognition`         |
 | Alt + Click at specified position        | `AutoAltClickAction`          |
 | Alt + Swipe                              | `AutoAltSwipeAction`          |
