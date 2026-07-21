@@ -23,6 +23,9 @@
                 "MapTrackerBigMap_FilterNone"
             ]
         },
+        "anchor": {
+            "SeizeDeliveryJobsAfterEnterWulingJobList": "" // 任务结束，置空锚点以防止误用
+        },
         "post_wait_freezes": {
             "time": 500,
             "target": [
@@ -31,9 +34,6 @@
                 160,
                 120
             ]
-        },
-        "anchor": {
-            "SeizeDeliveryJobsAfterEnterWulingJobList": "" // 任务结束，置空锚点以防止误用
         },
         "next": [
             "SeizeDeliveryJobsRunDeparture"

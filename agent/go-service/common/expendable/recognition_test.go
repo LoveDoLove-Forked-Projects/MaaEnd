@@ -60,7 +60,6 @@ func TestParseParams(t *testing.T) {
 	}
 }
 
-
 func TestNamedChild(t *testing.T) {
 	t.Parallel()
 	children := []json.RawMessage{

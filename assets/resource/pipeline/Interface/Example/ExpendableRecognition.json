@@ -11,12 +11,12 @@
             }
         },
         "action": "Click",
-        "attach": {
-            "visited": []
-        },
         "next": [
             "ExpendableRecognitionPass"
-        ]
+        ],
+        "attach": {
+            "visited": []
+        }
     },
     "ExpendableRecognitionSampleCandidate": {
         "desc": "候选 And：box_index 指向文案 OCR（visited key 与点击框）；Marker 仅作筛选条件",

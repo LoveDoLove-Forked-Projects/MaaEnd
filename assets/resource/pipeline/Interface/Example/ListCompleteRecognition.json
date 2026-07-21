@@ -13,14 +13,14 @@
                 }
             }
         },
-        "attach": {
-            "last_text": "",
-            "unchanged_count": 0
-        },
         "action": "DoNothing",
         "next": [
             "ListCompleteRecognitionPass"
-        ]
+        ],
+        "attach": {
+            "last_text": "",
+            "unchanged_count": 0
+        }
     },
     "ListCompleteRecognitionSampleAnd": {
         "desc": "And 示例：box_index=1 指向 OCR 子节点，对齐 ExpressionRecognition 取值方式",
