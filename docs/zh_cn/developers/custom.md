@@ -351,6 +351,7 @@ Recognition 节点用于执行自定义识别。常见写法如下：
 - 发现到的 key OCR 上的 `expected` 会被整表覆盖为「基模板 + visited 黑名单」；基模板来自覆盖前节点（会剥掉上一轮注入的负向前缀）。
 - key OCR 必须是**命名节点引用**（`And.box_index` 不能指向内联 OCR）。
 - `key_regex` 只执行调用方声明的截取规则；通用模块不内置具体游戏文案。
+
 ### ScheduleRecognition
 
 `ScheduleRecognition` 实现位于 `agent/go-service/common/schedule`，用于按星期几判断当前任务是否应继续执行。它只返回识别是否命中，不在 Go 中直接运行子任务；后续流程应通过 Pipeline 的 `next` 组织。
