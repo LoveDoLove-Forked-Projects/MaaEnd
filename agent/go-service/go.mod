@@ -7,7 +7,7 @@ require (
 	github.com/bytedance/sonic v1.15.0
 	github.com/rs/zerolog v1.34.0
 	github.com/shirou/gopsutil/v4 v4.26.2
-	golang.org/x/image v0.37.0
+	golang.org/x/image v0.41.0
 	golang.org/x/sys v0.42.0
 )
 
