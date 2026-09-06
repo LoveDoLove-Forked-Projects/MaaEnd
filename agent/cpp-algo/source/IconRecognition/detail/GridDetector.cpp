@@ -1897,7 +1897,7 @@ GridLayout BuildTransferLayout(
             // Port 保持原有从粗起点向下生成的策略。
             const int first_row = transfer ? std::min(0, rarity_fit->first_supported_row) : 0;
             const int last_row = transfer ? std::max(static_cast<int>(hint.y_starts.size()) - 1, rarity_fit->last_supported_row)
-                                         : std::max(static_cast<int>(hint.y_starts.size()), rarity_fit->supporting_rows) - 1;
+                                          : std::max(static_cast<int>(hint.y_starts.size()), rarity_fit->supporting_rows) - 1;
             const int count = std::min(profile.maximum_rows, last_row - first_row + 1);
             for (int row = 0; row < count; ++row) {
                 local_y.push_back(rarity_fit->origin + (first_row + row) * rarity_fit->pitch);
